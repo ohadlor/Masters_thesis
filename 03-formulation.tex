@@ -1,0 +1,32 @@
+\section{BACKGROUND AND NOTATIONS}
+
+\subsection{Probability Theory}
+In probability theory we denote a random variable (r.v.) $\RV$ having a sample space $\Space$, a realization $\variable\in\Space$ and a subset of the sample space $\subSpace\subseteq\Space$. We now define the shorthand $\measure{\subSpace}\triangleq\prob{\RV\in\subSpace}\equiv\expectation{\1{\RV\in \subSpace}}{}$ for probabilities and $\prob{\RV=\variable}\equiv\prob{\variable}$ for the probability density/mass function (pdf/pmf). In the case of conditioning we define $\measure{\subSpace\mid \variableI}\triangleq\prob{\RV\in\subSpace\mid \variableI}$. The expectation over a given pdf $\prob{\variable}$ is given by $\expectation{\cdot}{\RV}$. We will further define the partial expectation of a r.v. over a subspace $\subSpace$ as
+$\partialexpectation{f(\RV)}{\subSpace}\triangleq\int_\Space \prob{\variable}f(\variable)\1{\variable\in\subSpace}\D\variable\equiv\expectation{f(\RV)\1{\RV\in\subSpace}}{}\equiv\expectation{f\left(\RV\right)\mid\RV\in\subSpace}{}\measure{\subSpace}$. Finally we define the case of conditioning also for the partial expectation, $\partialexpectation{f(\RV)}{\subSpace\mid\variableI}\triangleq\int_\Space \prob{\variable\mid\variableI}f(\variable)\1{\variable\in\subSpace}\D\variable$ where $\prob{\variable\mid\variableI}$ is the conditional distribution.
+
+\subsection{POMDP}
+A $\rho$-POMDP is given by the tuple $(\stateSpace,\observationSpace,\actionSpace,\acttransition,\obstransition,\blf{0},\rho)$, where $\stateSpace$, $\observationSpace$, $\actionSpace$ are the state space, observation space and action space respectively. $\acttransition$ is the transition model given by $\probcond{\statesRV{}^\prime=\states{}^\prime}{\statesRV{}=\states{},\action{}}$ and $\obstransition$ is the observation model given by $\probcond{\observationsRV{}=\observations{}}{\statesRV{}=\states{}}$. $\blf{0}$ is an initial belief on the state and $\rho$ is a belief dependent reward. The belief at time $k$ is defined as $\blf{k}\triangleq\probcond{\states{k}}{\hist{k}}$, where $\hist{k}\triangleq\{\action{0:k-1},\observations{1:k}\}$ is the history at time $k$, we additionally define the prior belief as $\priorB{k}\triangleq\probcond{\states{k}}{\priorHist{k}}$ where $\priorHist{k}\triangleq\hist{k-1}\cup\{\action{k}\}$.
+
+At planning time $k$, the agent will need to perform a Bayesian update of the belief. This is done in two steps: a propagation step, and an update step. The former is given by	$\priorB{k+1}=\int\probcond{\states{k+1}}{\states{k},\action{k}}\blf{k}\D\states{k}$ or	$\priorB{k+1}=\probcond{\states{k+1}}{\states{k},\action{k}}\blf{k}$ for the recursive and smoothing scenarios respectively. The update step is given by $\blf{k+1}=\normalizer{k+1}^{-1}\probcond{\observations{k+1}}{\states{k+1}}\priorB{k+1}$, where $\normalizer{k}\triangleq\probcond{\observations{k}}{\priorHist{k}}$ is the normalizer. In the smoothing scenario the belief is over the joint states, $\bigcup_{i=0}^k\statesRV{i}$.
+
+Given some policy $\pi$, belief $\blf{k}$ and horizon $L$, the value function is given by
+\begin{equation}
+	V^\pi(\blf{k})=\sum_{l=k}^{k+L-1}\gamma^{l-k}\expectation{\reward{\blf{l},\pi_l,\blf{l+1}}}{\observationsRV{:l+1}}\;,\label{eq:value_function}
+\end{equation}
+where $\pi_k(\blf{k})\equiv \pi_k$ and $\observationsRV{k+1:l+1}\equiv \observationsRV{:l+1}$ for brevity. Alternatively, the Bellman representation yields
+\begin{equation}
+	Q^\pi(\blf{k},\action{k})=\expectation{\reward{\blf{k},\action{k},\blf{k+1}}}{\observationsRV{k+1}}+\gamma\expectation{V^\pi(\blf{k+1})}{\observationsRV{k+1}}\;,\label{eq:bellman}
+\end{equation}
+where $V^\pi(\blf{k})=Q^\pi(\blf{k},\pi_k)$.
+
+Often, when discussing uncertainty, information theoretical rewards are employed. Of these rewards the most common is entropy ($\entropy{\statesRV{}}=-\expectation{\log\prob{\statesRV{}}}{\statesRV{}}$). Explicitly, the expected reward ($\expectation{\reward{\blf{k},\pi_k,\blf{k+1}}}{\observationsRV{k+1}\mid\blf{k},\pi_k}$) takes the form of
+$-\expectation{\expectation{\log\probcond{\statesRV{k+1}}{\observationsRV{k+1},\blf{k},\pi_k}}{\statesRV{k+1}\mid\observationsRV{k+1},\blf{k},\pi_k}}{\observationsRV{k+1}\mid\blf{k},\pi_k}$, which corresponds to the conditional entropy, $\condEntropy{\statesRV{k+1}}{\observationsRV{k+1},\priorB{k+1}}$.
+
+\subsection{Structure}
+As we have mentioned in \cref{sec:intro}, many difficult problems exhibit structure in the belief. This structure is characteristic of the factor graphs~\cite{Koller09book}, which represents the variable dependencies in the POMDP problem. For the case of SLAM, the factors that connect between poses ($\state{}$) and landmarks ($\landmark{}$) are derived from the observation model, yielding $\probcond{\observation{}{}}{\state{},\landmark{}}$. When the landmarks are part of the state, these factors are pairwise, otherwise they become unary factors on the state. We denote $\landmarks{}\triangleq\bigcup_{i=1}^n\landmark{i}$ as the set of all landmarks and $\observations{}\equiv\bigcup_{i=1}^m\observation{}{i}$ as the set of all observations at the specified time-step. Often multiple observations will be gathered at each time-step, each associated with a specific landmark. To account for the different possible realization of observed landmarks we introduce $\da{}{}$, the variable which defines the DA. More precisely $\da{}{}\in\mathcal{D}\triangleq\left\{\{0,1\}^{n}\mid\norm{\da{}{}}_1=m\right\}$. Thus the vector provides the following association between observation and landmark, $\probcond{\observation{}{i}}{\state{},\da{}{},\landmark{j}}=\probcond{\observation{}{i}}{\state{},\landmark{j}}\1{\da{}{j}=1,\sum_{n=1}^{j}\da{}{n}=i}$. Under this problem formulation the Q-function must be rewritten as
+\begin{small}
+	\begin{equation}
+		Q^\pi(\blf{k},\action{k})=\E_{\daRV{k+1}{}}\biggl[{\expectation{\reward{\blf{k},\action{k},\blf{k+1}}}{\observationsRV{k+1}\mid\daRV{k+1}{}}}\biggr]+\gamma\E_{\daRV{k+1}{}}\biggl[\expectation{V^\pi(\blf{k+1})}{\observationsRV{k+1}\mid\daRV{k+1}{}}\biggr]\;,\label{eq:da_bellman}
+	\end{equation}
+\end{small}
+as the dimensionality of $\observationsRV{k+1}$ depends on $\daRV{k+1}{}$. For convenience we define $f_i\triangleq\probcond{\observation{}{}}{\state{},\landmark{i}}$ and $\mathcal{F}(\da{}{})\triangleq\{f_i\mid\da{}{i}=1\}$ represents the set of factors.

@@ -1,0 +1,137 @@
+
+\DeclareMathOperator*{\argmin}{arg\,min}
+\DeclareMathOperator*{\argmax}{arg\,max}
+
+\allowdisplaybreaks[0]
+
+\newcommand{\VI}[1]{{\color{blue} #1}}
+\newcommand{\OLO}[1]{{\color{violet} #1}}
+%%%%%%%%%%%%%% My commands
+
+%Theorems
+ \newtheorem{theorem}{Theorem}
+ \newtheorem{proposition}{Proposition}
+ \newtheorem{corollary}{Corollary}
+ \newtheorem{lemma}{Lemma}
+
+%Environments
+\newcommand{\TODO}[1]{
+	\begin{center}%
+		\colorbox{red}{%
+			\parbox{0.9\linewidth}{%
+				TODO:%
+				\begin{itemize}%
+					#1%
+				\end{itemize}%
+			}%
+		}
+	\end{center}
+}
+% text
+\newcommand{\scare}[1]{`#1'}
+\newcommand{\tsups}[1]{\textsuperscript{#1}}
+\newcommand{\tsubs}[1]{\textsubscript{#1}}
+
+\newcommand{\phantomeq}{\mathrel{\phantom{=}}}
+
+% probability
+\newcommand{\prob}[1]{\ensuremath{\mathrm{P}\left({#1}\right)}}
+\newcommand{\probcond}[2]{\ensuremath{\mathrm{P}\left({#1}\mid{#2}\right)}}
+
+\newcommand{\Var}{\mathrm{Var}}
+
+\newcommand{\D}{\mathrm{d}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\R}{\mathbb{R}}
+\DeclareMathOperator*{\E}{\mathbb{E}}
+\newcommand{\expectation}[2]{\ensuremath{\E\limits_{#2}\left[{#1}\right]}}
+\newcommand{\condexpectation}[3]{\ensuremath{\E\limits_{#3}\left[{#1}\mid{#2}\right]}}
+%
+\DeclareMathOperator*{\estim}{\hat{\E}}
+\newcommand{\estimator}[2]{\ensuremath{\estim\limits_{#2}\left[{#1}\right]}}
+\newcommand{\condestimator}[3]{\ensuremath{\estim\limits_{#3}\left[{#1}\mid{#2}\right]}}
+%
+\newcommand{\partexp}{\ensuremath{\mathcal{E}}}
+\newcommand{\partialexpectation}[2]{\ensuremath{\partexp_{#2}\left[{#1}\right]}}
+\newcommand{\partialestimator}[2]{\ensuremath{\hat{\partexp}_{#2}\left[{#1}\right]}}
+
+\newcommand{\measure}[1]{\ensuremath{\mathbb{P}\left({#1}\right)}}
+\newcommand{\estimatedmeasure}[1]{\ensuremath{\hat{\mathbb{P}}\left({#1}\right)}}
+
+\newcommand{\subSpace}{\ensuremath{\mathcal B}\xspace}
+\newcommand{\subSpaceI}[1]{\ensuremath{\mathcal{B}_{#1}}\xspace}
+\newcommand{\stcomp}[1]{\ensuremath{{#1}^{\mathsf{c}}}}
+\newcommand{\stcompI}[2]{\ensuremath{{#1}^{\mathsf{c}}_{#2}}}
+
+%entropy
+\newcommand{\simplentropy}[2]{\ensuremath{\bar{\mathcal{H}}_{#2}\left({#1}\right)}\xspace}
+\newcommand{\entropy}[1]{\ensuremath{\mathcal{H}\left({#1}\right)}\xspace}
+\newcommand{\entropyEstimator}[1]{\ensuremath{\hat{\mathcal{H}}\left({#1}\right)}\xspace}
+\newcommand{\entropyF}[3]{\ensuremath{\mathcal{H}^{#2}_{#3}\left({#1}\right)}\xspace}
+\newcommand{\simplecondEntropy}[3]{\ensuremath{\bar{\mathcal{H}}_{#3}\left({#1}\mid{#2}\right)}\xspace}
+\newcommand{\condEntropy}[2]{\ensuremath{\mathcal{H}\left({#1}\mid{#2}\right)}\xspace}
+\newcommand{\condEntropyEstimator}[2]{\ensuremath{\hat{\mathcal{H}}\left({#1}\mid{#2}\right)}\xspace}
+\newcommand{\augIG}[3]{\ensuremath{\tilde{\mathit{IG}}\left({#1},{#2};{#3}\right)}\xspace}
+\newcommand{\condIG}[4]{\ensuremath{\tilde{\mathit{IG}}\left({#1},{#2};{#3}\mid{#4}\right)}\xspace}
+\newcommand{\IG}[3]{\ensuremath{\mathit{IG}\left({#1};{#2}\mid{#3}\right)}\xspace}
+\newcommand{\MI}[3]{\ensuremath{\mathit{MI}\left({#1},{#2}\mid{#3}\right)}\xspace}
+\newcommand{\augMI}[2]{\ensuremath{\tilde{\mathit{MI}} \left({#1},{#2}\right)}\xspace}
+\newcommand{\condMI}[3]{\ensuremath{\tilde{\mathit{MI}}\left({#1},{#2}\mid {#3}\right)}\xspace}
+
+%POMDP parameters
+
+\newcommand{\variable}{\ensuremath{S}\xspace}
+\newcommand{\RV}{\ensuremath{\boldsymbol S}\xspace}
+\newcommand{\variableI}{\ensuremath{T}\xspace}
+\newcommand{\RVI}{\ensuremath{\boldsymbol T}\xspace}
+\newcommand{\Space}{\ensuremath{\mathcal S}\xspace}
+\newcommand{\SpaceI}{\ensuremath{\mathcal T}\xspace}
+
+\newcommand{\weight}[2]{\ensuremath{w_{#1}^{#2}}\xspace}
+\newcommand{\weightI}[2]{\ensuremath{v_{#1}^{#2}}\xspace}
+
+\newcommand{\state}[1]{\ensuremath{x_{#1}}\xspace}
+\newcommand{\states}[1]{\ensuremath{X_{#1}}\xspace}
+\newcommand{\stateRV}[1]{\ensuremath{\boldsymbol x_{#1}}\xspace}
+\newcommand{\statesRV}[1]{\ensuremath{\boldsymbol X_{#1}}\xspace}
+\newcommand{\stateSpace}{\ensuremath{\mathcal X}\xspace}
+
+\newcommand{\totalstate}[1]{\ensuremath{s_{#1}}\xspace}
+\newcommand{\totalstateRV}[1]{\ensuremath{\boldsymbol s_{#1}}\xspace}
+\newcommand{\totalstates}[1]{\ensuremath{S_{#1}}\xspace}
+\newcommand{\totalstatesRV}[1]{\ensuremath{\boldsymbol S_{#1}}\xspace}
+
+\newcommand{\landmark}[1]{\ensuremath{l^{#1}}\xspace}
+\newcommand{\landmarks}[1]{\ensuremath{L_{#1}}\xspace}
+\newcommand{\landmarkRV}[1]{\ensuremath{\boldsymbol l^{#1}}\xspace}
+\newcommand{\landmarksRV}[1]{\ensuremath{\boldsymbol L_{#1}}\xspace}
+
+\newcommand{\observation}[2]{\ensuremath{z_{#1}^{#2}}\xspace}
+\newcommand{\observations}[1]{\ensuremath{Z_{#1}}\xspace}
+\newcommand{\observationRV}[2]{\ensuremath{\boldsymbol z_{#1}^{#2}}\xspace}
+\newcommand{\observationsRV}[1]{\ensuremath{\boldsymbol Z_{#1}}\xspace}
+\newcommand{\observationSpace}{\ensuremath{\mathcal Z}\xspace}
+
+\newcommand{\obstransition}{\ensuremath{\mathcal O}\xspace}
+\newcommand{\acttransition}{\ensuremath{\mathcal T}\xspace}
+\newcommand{\action}[1]{\ensuremath{{a_{#1}}}\xspace}
+\newcommand{\actionSpace}{\ensuremath{\mathcal A}\xspace}
+
+\newcommand{\normalizer}[1]{\ensuremath{\eta_{#1}}\xspace}
+\newcommand{\da}[2]{\ensuremath{\beta_{#1}^{#2}}\xspace}
+\newcommand{\daRV}[2]{\ensuremath{\boldsymbol \beta_{#1}^{#2}}\xspace}
+\newcommand{\dalikelihood}{\ensuremath{\mathcal D}\xspace}
+\newcommand{\blf}[1]{\ensuremath{b_{#1}}\xspace}
+\newcommand{\priorB}[1]{\ensuremath{\blf{#1}}^-\xspace}
+\newcommand{\hist}[1]{\ensuremath{H_{#1}}\xspace}
+\newcommand{\priorHist}[1]{\ensuremath{\hist{#1}^-}\xspace}
+\newcommand{\reward}[1]{\ensuremath{\rho\left(#1\right)}\xspace}
+
+% other
+
+\newcommand{\1}[1]{\ensuremath{\mathbbm{1}{\left\{#1\right\}}}\xspace}
+\DeclareMathOperator*{\lowerbound}{\mathcal{LB}}
+\DeclareMathOperator*{\upperbound}{\mathcal{UB}}
+\DeclarePairedDelimiter{\norm}{\lVert}{\rVert}%
+\DeclarePairedDelimiter{\abs}{\lvert}{\rvert}%
+\newcommand{\pnorm}[3]{\ensuremath{\norm*{#1}_{#2}^{(#3)}}\xspace}

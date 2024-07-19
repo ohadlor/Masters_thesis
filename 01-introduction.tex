@@ -1,0 +1,21 @@
+\section{INTRODUCTION}\label{sec:intro}
+
+The problem of planning for partially observable Markov decision processes (POMDPs) has garnered significant attention in recent years. The approaches employed in finding a solution to POMDPs vary depending on if the state, observation or action spaces are discrete, continuous or a mixture. Finding a globally optimal solution remains intractable for all but the smallest problems as, among other things, it requires reasoning about the random variables as defined by the POMDP. This poses great difficulties for low dimensional settings and is an even exponentially greater difficulty for the high-dimensional setting. Relaxing assumptions on the belief help but do not completely solve the problem.
+
+To find a tractable solution to the problem, tractable bounds on the reward or value function, with guarantees, are an attractive alternative to the explicit calculations required of the optimal solution. Two common inequalities from probability theory employed in the field of robotics and AI are Markov's inequality, which allows for lower bounding the expectation and Hoeffding's inequality, which bounds the theoretical expectation and a sampling-based estimator of the expectation with some probability.
+
+In this work, we argue that efficient planning originates from efficient probability theory bounds; we formulate and prove our own novel bounds in probability theory. We begin by defining the concept of partial expectation, an operand that is directly proportional to the conditional expectation. We then formulate a bound between expectation and the partial expectation and discuss the computation complexity associated with the partial expectation. Leveraging these bounds, we go on to formulate novel probabilistic bounds that incorporate Hoeffding's inequality. These bounds allow the expectation to be bounded with respect to an estimator, not of the expectation, but of the conditional expectation or the partial expectation. We provide conditions under which these bounds improve upon Hoeffding's inequality. To the best of our knowledge, these bounds have not appeared previously in literature.
+
+Application of our bounds within the framework of planning begins with bounds on the expected reward, with respect to the observation space. We prove how a general value function can be bounded in a recursive manner via the use of a partial expectation with respect to the observation space. After the general scenario, we look into information theoretical rewards, which are known to be a more challenging problem than state dependent rewards. In this scenario we formulate bounds on the immediate expected reward with respect to the observation space, that allows us to bound the value function. Finally, we consider POMDP/BSP planning for problems with structure in their belief. This is characteristic of high dimensional state space problems, such as active SLAM. This setting necessitates reasoning over data association (DA) realizations of future observations, where each realization corresponds to a different belief topology. In this case we devise novel bounds on the value function that allow for reasoning over only part of the DA realizations with guarantees.
+
+To summarize, the main contributions of this paper include:
+\begin{itemize}
+	\item We formulate and prove novel bounds on expectation, starting with the concept of partial expectation.
+	\item We formulate and prove novel bounds between theoretical expectation and estimators of partial expectation, with conditions for which they improve upon Hoeffding's inequality.
+	\item We formulate novel bounds on the value function via reward simplification.
+	\item We formulate novel bounds on the conditional entropy.
+	\item We formulate novel bounds on the Boer's entropy with greater computational efficiency.
+	\item We exploit the belief structure present in many POMDP problems to allow for calculation reuse between rewards of similar topologies.
+\end{itemize}
+
+
