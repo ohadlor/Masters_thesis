@@ -1,0 +1,53 @@
+% This file contains the abstract part of your thesis - in English and
+% in Hebrew (within \abstractEnglish and \abstractHebrew respectively).
+%
+% Notes:
+% - This file uses the UTF-8 character set encoding for the Hebrew
+%   text not to get garbled. Keep it that way.
+% - Assuming your thesis is mainly in English, Graduate School
+%   regulations mandate the following lengths for the abstracts:
+%
+%      Language    Min. Length   Max. Length
+%     ---------------------------------------
+%      English       200 words     500 words
+%      Hebrew        500 words   2,000 words
+%
+%   so that the Hebrew abstract typically has some content from
+%   the English introduction and an overview of the results, not
+%   present in the English; it is not just a translation.
+
+\abstractEnglish{
+
+Planning under uncertainty in partially observable domains, often formulated as \glspl{pomdp}, is an exceedingly difficult problem. Finding the globally optimal solution is intractable for all but the smallest problems as it requires reasoning about realization of the many random variables of the problem. Thus, tractable bounds with formal guarantees are attractive alternative to finding a globally optimal solution. In this paper, motivated by this line of reasoning, we formulate and prove novel probability theory bounds. First, we bound the expectation with respect to the partial expectation (seen to be directly proportional to the conditional expectation) and show that this is a generalization of the Markov inequality. Second, by merging our novel inequalities with Hoeffding's inequality, we compose an additional novel bound, which allows for bounding expectations with respect to estimators of partial expectations. Finally, we apply these bounds to the context of planning; we prove bounds on the general value function with respect to a partial observation space or state space. We then bound the conditional entropy with respect to the partial observation space and finally, with the use of our novel bounds, leverage the structure of beliefs in \glspl{pomdp} to allow for reuse in calculations when eliminating certain realizations of the belief topology.
+
+} % end of English abstract
+
+% 500 - 2000 words
+\abstractHebrew{
+תכנון תחת אי ודאות כאשר מרחב המצב נצפה חלקית, מפורמל בדרך כלל כ\textenglish{Partially Observable Markov Decision Process (POMDP)}, מציב אתגר משמעותי בפני קהילת הבינה המלאכותית והנדסת הרובוטיקה. הבעיה המרכזית בתכנון זה היא מציאת פתרון אופטימלי גלובלי, אשר אפשרית רק עבור הבעיות קטנות ביותר. בעיות אלו הופכות למאתגרות במיוחד כאשר ההנחות הסטנדרטיות על מרחב האמונה \textenglish{(belief space)} אינן מתקיימות.
+%%%%%%%%
+
+בתקופה האחרונה, זוכה בעיית התכנון עבור \textenglish{POMDPs} לתשומת לב רבה בשל המורכבות הגבוהה שלה והיישומים הרבים שלה בעולם האמיתי, כגון רכבים אוטונומיים ורובוטיקה מתקדמת. הגישות השונות למציאת פתרון לבעיות \textenglish{POMDP} משתנות בהתאם למאפיינים של מרחבי המצב, התצפית או הפעולה, שיכולים להיות בדידים, רציפים, או שילוב של השניים. האתגר המרכזי טמון בכך שמציאת פתרון אופטימלי גלובלי דורשת התחשבות בכל המשתנים האקראיים המוגדרים על ידי ה-\textenglish{POMDP}, דבר שמוביל לקושי חישובי עצום גם במרחבי מצב נמוכי ממדים, ובאופן אקספוננציאלי גדול יותר במרחבי מצב גבוהי ממדים.
+
+ניסיונות לפשט בעיות אלו באמצעות הנחות מקלות על מרחב האמונה אכן מסייעות, אך אינן פותרות את הבעיה באופן מלא. לכן, עולה הצורך בגישות חישוביות המציעות פתרונות מקורבים המספקים ערובות פורמליות ואשר מאפשרות לתכנן ביעילות במרחבי מצב גבוהי ממדים. בגישה זו, גבולות חישוביים עם הבטחות על פונקציית הערך או התגמול מהווים חלופה אטרקטיבית לחישובים המדויקים הנדרשים עבור הפתרון האופטימלי.
+
+שני אי-שוויונים מרכזיים בתורת ההסתברות, הנפוצים בשימוש בתחום הרובוטיקה והבינה המלאכותית, הם אי-שוויון מרקוב ואי-שוויון הופדינג. אי-שוויון מרקוב מאפשר הצבת גבולות תחתונים על התוחלת, בעוד אי-שוויון הופדינג מציב גבולות הסתברותיים בין התוחלת התיאורטית לאומדני התוחלת המבוססים על דגימות.
+
+בעבודה זו, אנו טוענים כי תכנון יעיל במרחבי \textenglish{POMDPs} נובע מגבולות חישוביים יעילים בתורת ההסתברות, ומציעים גישה חדשנית המבוססת על פיתוח גבולות חישוביים חדשים עם ערובות פורמליות. ראשית, אנו מציגים את המושג של תוחלת חלקית, שהוא פרופורציונלי ישירות לתוחלת מותנית. אנו מגדירים גבולות עליונים ותחתונים בין התוחלת לבין התוחלת החלקית, ומציינים את המורכבות החישובית הקשורה בחישוב הגבולות הללו. בנוסף, מתייחסים לתכונות הרצויות של הגבולות עבור תהליך קבלת ההחלטות. לאחר מכן, אנו משלבים את הגבולות שהתקבלו עם אי-שוויון הופדינג, ומנסחים גבול חדש המאפשר בתורו להציב גבולות הסתברותיים על התוחלת ביחס לאומדנים של התוחלות החלקיות. אנו מספקים תנאים שבהם גבולות אלו טובים מאי-שוויון הופדינג, ומציעים גישה חישובית יעילה יותר לפתרון בעיות תכנון בתנאי אי ודאות.
+
+בהמשך, אנו מיישמים את הגבולות החדשים במסגרת תכנון ומציגים הוכחות לגבולות על תוחלת התגמול ביחס למרחב התצפית. אנו מוכיחים כיצד ניתן להציב גבולות על פונקציית הערך הכללית בצורה רקורסיבית באמצעות שימוש בתוחלת חלקית ביחס למרחב התצפיות. לאחר שדנו במצב הכללי, אנו מתמקדים באנטרופיה מותנית (תוחלת תגמול מתורת האינפורמציה), שהיא מורכבת יותר לתכנון מאשר תגמול תלוי מצב. תחת הנחה זו, אנו מנסחים גבולות חדשים על תוחלת התגמול המיידי ביחס למרחב התצפית, מה שמאפשר לגבש גבולות על פונקציית הערך הכוללת. בנוסף, אנו מתייחסים למשערך של בּוּר, שהוא משערך עבור האנטרופיה, ומנסחים עליו חסמים עם יעילות חישובית משופרת ביחס לעבודות קודמות.
+
+לאחר מכן, אנו עוסקים בתכנון \textenglish{POMDP}/\textenglish{BSP} עבור בעיות עם אמונה בעלת מבנה. אמונה בעלת מבנה היא תכונה האופיינית לבעיות במרחב מצב גבוה ממדים, כמו \textenglish{SLAM}. במצבים אלה, יש צורך להתחשב במימושי אסוציאציות מידע עתידיות שונות, כאשר כל מימוש מתאים לטופולוגיית אמונה שונה. אנו מנסחים גבולות חדשים על פונקציית הערך המאפשרים להתמקד בחלק מהמימושים בלבד, תוך מתן ערובות פורמליות.
+
+לסיכום, התרומות המרכזיות של עבודה זו כוללות:
+\begin{itemize}
+	\item	ניסוח והוכחת גבולות חדשים על התוחלת, תוך שימוש במושג התוחלת החלקית.
+	\item 	ניסוח והוכחת גבולות חדשים בין התוחלת התיאורטית לאומדנים של תוחלת חלקית, עם תנאים לשיפור על אי-שוויון הופדינג.
+	\item	ניסוח גבולות חדשים על פונקציית הערך באמצעות פישוט תגמולים.
+	\item	ניסוח גבולות חדשים על האנטרופיה המותנית.
+	\item 	ניסוח גבולות חדשים על האנטרופיה של בּוּר, עם יעילות חישובית משופרת.
+	\item	ניצול המבנה של אמונות בבעיות \textenglish{POMDP}  רבות, דבר שמאפשר שימוש חוזר בחישובים בין תגמולים בעלי טופולוגיות דומות.
+\end{itemize}
+
+
+} % end of Hebrew abstract

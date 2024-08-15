@@ -1,0 +1,48 @@
+\glossaryentry{r."\,v.?\glossentry{rv}|setentrycounter[]{page}"\glsnumberformat}{\relax }
+\glossaryentry{POMDP?\glossentry{pomdp}|setentrycounter[]{page}"\glsnumberformat}{1}
+\glossaryentry{BSP?\glossentry{bsp}|setentrycounter[]{page}"\glsnumberformat}{6}
+\glossaryentry{SLAM?\glossentry{slam}|setentrycounter[]{page}"\glsnumberformat}{6}
+\glossaryentry{DA?\glossentry{da}|setentrycounter[]{page}"\glsnumberformat}{6}
+\glossaryentry{MCTS?\glossentry{mcts}|setentrycounter[]{page}"\glsnumberformat}{7}
+\glossaryentry{pdf?\glossentry{pdf}|setentrycounter[]{page}"\glsnumberformat}{9}
+\glossaryentry{$"\mathcal X$?\glossentry{symb:stat_space}|setentrycounter[]{page}"\glsignore}{iii}
+\glossaryentry{$"\mathcal Z$?\glossentry{symb:observation_space}|setentrycounter[]{page}"\glsignore}{iii}
+\glossaryentry{$"\mathcal A$?\glossentry{symb:action_space}|setentrycounter[]{page}"\glsignore}{iii}
+\glossaryentry{$"\mathcal T$?\glossentry{symb:transition_model}|setentrycounter[]{page}"\glsignore}{iii}
+\glossaryentry{$"\mathcal O$?\glossentry{symb:observation_model}|setentrycounter[]{page}"\glsignore}{iii}
+\glossaryentry{$R("\cdot )$?\glossentry{symb:state_reward}|setentrycounter[]{page}"\glsignore}{iii}
+\glossaryentry{$"\rho ("\cdot )$?\glossentry{symb:belief_reward}|setentrycounter[]{page}"\glsignore}{iii}
+\glossaryentry{$"\gamma $?\glossentry{symb:discount}|setentrycounter[]{page}"\glsignore}{iii}
+\glossaryentry{$"\boldsymbol S,"\boldsymbol T$?\glossentry{symb:rv}|setentrycounter[]{page}"\glsignore}{iii}
+\glossaryentry{$S$, $T$?\glossentry{symb:variable}|setentrycounter[]{page}"\glsignore}{iii}
+\glossaryentry{$"\mathcal S$, $"\mathcal T$?\glossentry{symb:variable_space}|setentrycounter[]{page}"\glsignore}{iii}
+\glossaryentry{$X$?\glossentry{symb:state}|setentrycounter[]{page}"\glsignore}{iii}
+\glossaryentry{$X_k$?\glossentry{symb:state_k}|setentrycounter[]{page}"\glsignore}{iii}
+\glossaryentry{$x_k$?\glossentry{symb:state_new}|setentrycounter[]{page}"\glsignore}{iii}
+\glossaryentry{$l^i$?\glossentry{symb:landmark}|setentrycounter[]{page}"\glsignore}{iii}
+\glossaryentry{$L_k$?\glossentry{symb:landmarks}|setentrycounter[]{page}"\glsignore}{iii}
+\glossaryentry{$z^{i}$?\glossentry{symb:observation}|setentrycounter[]{page}"\glsignore}{iii}
+\glossaryentry{$Z_{k}$?\glossentry{symb:observations}|setentrycounter[]{page}"\glsignore}{iii}
+\glossaryentry{$a_{k}$?\glossentry{symb:action}|setentrycounter[]{page}"\glsignore}{iii}
+\glossaryentry{$"\pi _{k}$?\glossentry{symb:policy}|setentrycounter[]{page}"\glsignore}{iii}
+\glossaryentry{$"\beta _{k}$?\glossentry{symb:da}|setentrycounter[]{page}"\glsignore}{iii}
+\glossaryentry{$H_k$?\glossentry{symb:hist}|setentrycounter[]{page}"\glsignore}{iii}
+\glossaryentry{$H_k^-$?\glossentry{symb:prior_hist}|setentrycounter[]{page}"\glsignore}{iii}
+\glossaryentry{$b_k$?\glossentry{symb:belief}|setentrycounter[]{page}"\glsignore}{iii}
+\glossaryentry{$b_k^-$?\glossentry{symb:prior_belief}|setentrycounter[]{page}"\glsignore}{iii}
+\glossaryentry{$"\eta _{k}$?\glossentry{symb:normalizer}|setentrycounter[]{page}"\glsignore}{iii}
+\glossaryentry{$"\mathrm {P}"\left ("\cdot "\right )$?\glossentry{symb:prob}|setentrycounter[]{page}"\glsignore}{iii}
+\glossaryentry{$"\boldsymbol {P}"\left ("\cdot "\right )$?\glossentry{symb:measure}|setentrycounter[]{page}"\glsignore}{iii}
+\glossaryentry{$"\boldsymbol {E}"\left ["\cdot "\right ]$?\glossentry{symb:expectation}|setentrycounter[]{page}"\glsignore}{iii}
+\glossaryentry{$"\hat {"\boldsymbol {E}}"\left ["\cdot "\right ]$?\glossentry{symb:estimator}|setentrycounter[]{page}"\glsignore}{iii}
+\glossaryentry{$"\mathcal B$?\glossentry{symb:subspace}|setentrycounter[]{page}"\glsignore}{iii}
+\glossaryentry{$"\mathcal {E}_{"\mathcal B}"\left ["\cdot "\right ]$?\glossentry{symb:partial}|setentrycounter[]{page}"\glsignore}{iii}
+\glossaryentry{$"\cdot ^{"\mathsf {c}}$?\glossentry{symb:complement}|setentrycounter[]{page}"\glsignore}{iii}
+\glossaryentry{$"\bar {"\mathcal {H}}"\left ("\cdot "\right )$?\glossentry{symb:simp_entropy}|setentrycounter[]{page}"\glsignore}{iii}
+\glossaryentry{$"\mathcal {H}"\left ("\cdot "\right )$?\glossentry{symb:entropy}|setentrycounter[]{page}"\glsignore}{iii}
+\glossaryentry{$"\mathcal {H}"\left ("\cdot "\mid "\cdot "\right )$?\glossentry{symb:cond_entropy}|setentrycounter[]{page}"\glsignore}{iii}
+\glossaryentry{$"\mathbbm {1}"\left "\{"\cdot "\right "\}$?\glossentry{symb:indicator}|setentrycounter[]{page}"\glsignore}{iii}
+\glossaryentry{$"\mathcal {LB}$, $"\mathcal {UB}$?\glossentry{symb:bounds}|setentrycounter[]{page}"\glsignore}{iii}
+\glossaryentry{$"\lVert "\cdot "\rVert ^p_S$?\glossentry{symb:pnorm}|setentrycounter[]{page}"\glsignore}{iii}
+\glossaryentry{$V^"\pi ("\cdot )$?\glossentry{symb:v-function}|setentrycounter[]{page}"\glsignore}{iii}
+\glossaryentry{$Q^"\pi ("\cdot ,"\cdot )$?\glossentry{symb:q-function}|setentrycounter[]{page}"\glsignore}{iii}

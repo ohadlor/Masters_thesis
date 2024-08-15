@@ -1,28 +1,22 @@
 ## Core latex/pdflatex auxiliary files:
+aux/
 *.aux
 *.lof
+*.fol
 *.log
 *.lot
 *.fls
 *.out
 *.toc
-*.fmt
-*.fot
-*.cb
-*.cb2
-.*.lb
+*.cot
 
 ## Intermediate documents:
 *.dvi
 *.xdv
-*-converted-to.*
 # these rules might exclude image files for figures etc.
 # *.ps
 # *.eps
 # *.pdf
-
-## Generated if empty string is given at "Please type another file name for output:"
-.pdf
 
 ## Bibliography auxiliary files (bibtex/biblatex/biber):
 *.bbl
@@ -39,20 +33,96 @@
 *.synctex.gz
 *.synctex.gz(busy)
 *.pdfsync
-
-## Build tool directories for auxiliary files
-# latexrun
-latex.out/
+.refresh
 
 ## Auxiliary and intermediate files from other packages:
+
 # algorithms
 *.alg
 *.loa
 
-# achemso
-acs-*.bib
-
 # amsthm
 *.thm
 
-/.DS_Store
+# beamer
+*.nav
+*.snm
+*.vrb
+
+# glossaries
+*.acn
+*.acr
+*.glg
+*.glo
+*.gls
+
+# hyperref
+*.brf
+
+# listings
+*.lol
+
+# makeidx
+*.idx
+*.ilg
+*.ind
+*.ist
+
+# minitoc
+*.maf
+*.mtc
+*.mtc0
+
+# minted
+*.pyg
+
+# nomencl
+*.nlo
+
+# sagetex
+*.sagetex.sage
+*.sagetex.py
+*.sagetex.scmd
+
+# sympy
+*.sout
+*.sympy
+sympy-plots-for-*.tex/
+
+# todonotes
+*.tdo
+
+# xindy
+*.xdy
+
+# changebar
+*.cb
+*.cb2
+
+# patching-related
+*.orig
+*.rej
+*.diff
+
+# Temporary, cache, swap files
+\#\#*
+*.swp
+*.bkp
+
+# Files which "ask" to be hidden
+*~
+#.*
+unused/
+delme/
+
+
+## Additional ignores for this repository
+
+# archives
+*.zip
+*.tar.*
+
+
+
+
+thesis.pdf

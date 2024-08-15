@@ -1,0 +1,269 @@
+\chapter{Appendix}\label{sec:app}
+
+\section{Appendix of \cref{sec:cond_ent_bounds}}
+\begin{proposition}
+	\label{thm:observation_bounds}
+	The conditional entropy of the \gls{rv} $\observationsRV{}$ given the \gls{rv} $\statesRV{}$ and assuming access to the likelihood distribution, can be bounded by the difference of the partial expectation with respect to $\observationsRV{}$. Thus $\lowerbound\leq\condEntropy{\observationsRV{}}{\statesRV{}}-\simplecondEntropy{\observationsRV{}}{\statesRV{}}{\observations{}}\leq\upperbound$, where:
+	\begin{subequations}
+		\begin{align}
+			\lowerbound&=-\measure{\stcomp{\subSpace}}\log\sup_{\observations{}\in\stcomp{\subSpace}}M_{\observations{}}\;,\\
+			\upperbound& =-\measure{\stcomp{\subSpace}}\log\inf_{\observations{}\in\stcomp{\subSpace}}m_{\observations{}}\;,\\
+			\simplecondEntropy{\observationsRV{}}{\statesRV{}}{\observations{}} &\triangleq-\partialexpectation{\expectation{\log\probcond{\observationsRV{}}{\statesRV{}}}{\statesRV{}\mid\observationsRV{}}}{\subSpace}\;.
+		\end{align}
+	\end{subequations}
+\end{proposition}
+\begin{proof}
+	We begin by expressing the conditional entropy as follows
+	\begin{align*}
+		\condEntropy{\observationsRV{}}{\statesRV{}} & =-\int\int\prob{\states{}}\probcond{\observations{}{}}{\states{}}\log\probcond{\observations{}{}}{\states{}}\D\observations{}\D\states{}\\
+		& =-\int\int\prob{\observations{}}\probcond{\states{}}{\observations{}}\log\probcond{\observations{}{}}{\states{}}\D\states{}\D\observations{}\\
+		& =-\expectation{\expectation{\log \probcond{\observationsRV{}}{\statesRV{}}}{\statesRV{}\mid\observationsRV{}}}{\observationsRV{}},
+		\label{eq:entropy_observation}
+	\end{align*}
+	As a direct consequence of \cref{thm:general_bounds}
+	\begin{equation*}
+		\condEntropy{\observationsRV{}}{\statesRV{}}+\partialexpectation{\expectation{\log\probcond{\observationsRV{}}{\statesRV{}}}{\statesRV{}\mid\observationsRV{}}}{\subSpace}\leq
+		-\measure{\stcomp{\subSpace}}\inf_{\observations{}\in\stcomp{\subSpace}}\expectation{\log\probcond{\observations{}}{\statesRV{}}}{\statesRV{}\mid\observations{}}
+	\end{equation*}
+	we can then loosen the bounds via
+	\begin{align*}
+		\inf_{\observations{}\in\stcomp{\subSpace}}\expectation{\log\probcond{\observations{}}{\statesRV{}}}{\statesRV{}\mid\observations{}} & \geq \log\inf_{\states{},\observations{}\in\stcomp{\subSpace}}\probcond{\observations{}}{\states{}} \\
+		& =\log\inf_{\observations{}\in\stcomp{\subSpace}}m_{\observations{}}
+	\end{align*}
+\end{proof}
+
+\begin{proposition}
+	\label{thm:normalizer_bounds}
+	The entropy of the \gls{rv} $\observationsRV{}$, which is distributed like the normalizer of the belief, can be bounded with a difference of a partial expectation, such that $\lowerbound\leq\entropy{\observationsRV{}} -\simplentropy{\observationsRV{}}{\observations{}}\leq\upperbound$, where
+	\begin{subequations}
+		\begin{align}
+			\lowerbound & =-\measure{\stcomp{\subSpace}}\log M_{\norm{\observations{}}}(\stcomp{\subSpace})\;,                                                                      \\
+			\upperbound & =-\measure{\stcomp{\subSpace}}\log m_{\norm{\observations{}}}(\stcomp{\subSpace})+\upperbound_\subSpace\left(\expectation{\log C_{pq}}{\observationsRV{}}\right)\;,\\
+			\simplentropy{\observationsRV{}}{\observations{}}&\triangleq-\partialexpectation{\log\pnorm{\probcond{\observationsRV{}}{\states{}}}{p}{\states{}}}{\subSpace}-\log\pnorm{\prob{\states{}}}{q}{\states{}}\;,
+		\end{align}
+	\end{subequations}
+	and
+	\begin{equation}
+		\begin{split}
+			\upperbound_\subSpace&\left(\expectation{\log C_{pq}}{\observationsRV{}}\right)                                                                                                                                                       \\
+			&=-\frac{\log p}{p}-\frac{\log q}{q}-\partialexpectation{\log m_{\observations{}}}{\subSpace}-\log m_{\states{}}                                                                                                      \\
+			&\phantomeq+ \partialexpectation{\log\left(m_{\states{}}M_{\states{}}^{q-1}+m_{\observations{}}M_{\observations{}}^{p-1}\right)}{\subSpace}                                                                           \\
+			&\phantomeq+\measure{\stcomp{\subSpace}}\log\Bigl( m_{\states{}}M_{\states{}}^{q-1}+\inf_{\observations{}\in\stcomp{\subSpace}}m_{\observations{}}\Bigl(\sup_{\observations{}\in\stcomp{\subSpace}}M_{\observations{}}\Bigr)^{p-1}\Bigr) \\
+			&\phantomeq-\measure{\stcomp{\subSpace}}\log\inf_{\observations{}\in\stcomp{\subSpace}}m_{\observations{}}\;.
+		\end{split}
+	\end{equation}
+\end{proposition}
+\begin{proof}
+	Bounding the normalizer entropy ($\entropy{\observationsRV{}}$) is more difficult, and requires two bounding steps. In the first step we will use Holder's inequality and its variants~\cite{Wang77cmb} to separate the observations from the belief. We can then subsequently apply bounds of the form seen in \cref{thm:general_bounds}.
+
+	For both upper and lower bounds we begin by bounding the normalizer:
+	\begin{equation*}
+		\prob{\observationsRV{}}=\int\probcond{\observationsRV{}}{\states{}}\prob{\states{}}d\states{}\;,
+	\end{equation*}
+	bounding above by
+	\begin{equation}
+		\pnorm{\probcond{\observationsRV{}}{\states{}}}{p}{\states{}}\pnorm{\prob{\states{}}}{q}{\states{}}\;,\label{eq:general_holders}
+	\end{equation}
+	and bounding below by~\cite{Wang77cmb}
+	\begin{equation}
+		C_{pq}^{-1}\pnorm{\probcond{\observationsRV{}}{\states{}}}{p}{\states{}}\pnorm{\prob{\states{}}}{q}{\states{}}\;,\label{eq:general_reverse_holders}
+	\end{equation}
+	where $\frac{1}{p}+\frac{1}{q}=1$, $\pnorm{\cdot}{p}{\variable}$ is the $p$\tsups{th} norm with respect to $\variable$ and
+	\begin{equation*}
+		C_{pq}\triangleq\frac{\frac{M_{\observations{}}^{p-1}}{m_{\states{}}}+ \frac{M_{\states{}}^{q-1}}{m_{\observations{}}}}{p^{1/p}q^{1/q}}\;,
+	\end{equation*}
+	with $p,q>1$, limited by \eqref{eq:general_reverse_holders}, and
+	\begin{gather*}
+		M_{\observations{}}\triangleq\sup_{\states{}}\probcond{\observationsRV{}}{\states{}}\;,\quad
+		m_{\observations{}}\triangleq\inf_{\states{}}\probcond{\observationsRV{}}{\states{}}\;,
+		\\
+		M_{\states{}}\triangleq\sup_{\states{}}\prob{\states{}}\;,\quad
+		m_{\states{}}\triangleq\inf_{\states{}}\prob{\states{}}\;,
+	\end{gather*}
+	under the assumption that the infimum of the functions are greater than zero.
+
+	In the following we will prove the upper bound, the lower bound is derived in a similar manner but for $C_{pq}=1$. Applying inequalities \eqref{eq:reverse_holders} and \eqref{eq:bound_upper_log} we find that
+	\begin{align*}
+		\entropy{\observationsRV{}} & \leq\expectation{\log C_{pq}}{\observationsRV{}} -\expectation{\log\left(\pnorm{\probcond{\observationsRV{}}{\states{}}}{p}{\states{}}\pnorm{\prob{\states{}}}{q}{\states{}}\right)}{\observationsRV{}} \\
+		& =\expectation{\log C_{pq}}{\observationsRV{}}-\expectation{\log \pnorm{\probcond{\observationsRV{}}{\states{}}}{p}{\states{}}}{\observationsRV{}} -\log\pnorm{\prob{\states{}}}{q}{\states{}}           \\
+		\begin{split}
+			& \leq\expectation{\log C_{pq}}{\observationsRV{}} -\partialexpectation{\log \pnorm{\probcond{\observationsRV{}}{\states{}}}{p}{\states{}}}{\subSpace} -\log\pnorm{\prob{\states{}}}{q}{\states{}} \\
+			& \phantomeq-\measure{\stcomp{\subSpace}}\inf_{\observations{}\in\stcomp{\subSpace}}\log \pnorm{\probcond{\observations{}}{\states{}}}{p}{\states{}}
+		\end{split}                   \\
+		\begin{split}
+			& \leq \expectation{\log C_{pq}}{\observationsRV{}}-\partialexpectation{\log \pnorm{\probcond{\observationsRV{}}{\states{}}}{p}{\states{}}}{\subSpace} -\log\pnorm{\prob{\states{}}}{q}{\states{}} \\
+			& \phantomeq-\measure{\stcomp{\subSpace}}\left(\log m_{\norm{\observations{}}}(\stcomp{\subSpace})\right)
+		\end{split}
+	\end{align*}
+	where
+	\begin{align*}
+		m_{\norm{\observations{}}}(\subSpace) & \triangleq\inf_{\observations{}\in\subSpace}\pnorm{\probcond{\observations{}}{\states{}}}{p}{\states{}}\;,
+		\\
+		M_{\norm{\observations{}}}(\subSpace) & \triangleq\sup_{\observations{}\in\subSpace}\pnorm{\probcond{\observations{}}{\states{}}}{p}{\states{}}\;.
+	\end{align*}
+	Via the definition of $C_{pq}$ we can further refine the bounds
+	\begin{align*}
+		\expectation{\log C_{pq}}{\observationsRV{}} & = -\frac{\log p}{p}-\frac{\log q}{q}-\log m_{\states{}}+\expectation{\log \left(M_{\observationsRV{}}^{p-1}+\frac{m_{\states{}}M_{\states{}}^{q-1}}{m_{\observationsRV{}}}\right)}{\observationsRV{}}\\
+		\begin{split}
+			& \leq -\frac{\log p}{p}-\frac{\log q}{q}-\log m_{\states{}}+\partialexpectation{\log\left( M_{\observationsRV{}}^{p-1}+\frac{m_{\states{}}M_{\states{}}^{q-1}}{m_{\observationsRV{}}}\right)}{\subSpace}                                        \\
+			& \phantomeq+\measure{\stcomp{\subSpace}}\sup_{\observations{}\in\stcomp{\subSpace}}\log\left( M_{\observations{}}^{p-1}+\frac{m_{\states{}}M_{\states{}}^{q-1}}{m_{\observations{}}}\right)
+		\end{split} \\
+		\begin{split}
+			& \leq-\frac{\log p}{p}-\frac{\log q}{q}-\log m_{\states{}}-\partialexpectation{\log m_{\observationsRV{}}}{\subSpace}\\
+			&\phantomeq+\partialexpectation{\log\left(m_{\states{}}M_{\states{}}^{q-1}+m_{\observationsRV{}}M_{\observationsRV{}}^{p-1}\right)}{\subSpace}
+			-\measure{\stcomp{\subSpace}}\log\inf_{\observations{}\in\stcomp{\subSpace}}m_{\observations{}}\\
+			& \phantomeq+\measure{\stcomp{\subSpace}}\log\Bigl( m_{\states{}}M_{\states{}}^{q-1}
+			+\inf_{\observations{}\in\stcomp{\subSpace}}m_{\observations{}}\Bigl(\sup_{\observations{}\in\stcomp{\subSpace}}M_{\observations{}}\Bigr)^{p-1}\Bigr)
+		\end{split}
+	\end{align*}
+\end{proof}
+
+\section{Appendix to \cref{sec:high_dim}}
+
+\begin{proposition}
+	\label{thm:entropy_high_dim_bounds}
+	The conditional entropy of the \gls{rv} $\statesRV{}$ given the \gls{rv} $\observationsRV{}=\observationRV{}{1:n}$ can be bounded by the difference of the partial expectation with respect to $\observationRV{}{1:m}$ for $m\leq n$. Thus $\lowerbound_m\leq\condEntropy{\statesRV{}}{\observationsRV{}}-\simplecondEntropy{\statesRV{}}{\observationsRV{}}{m}\leq\upperbound_m$, where:
+	\begin{small}
+		\begin{subequations}
+			\begin{align}
+				\lowerbound\nolimits_m & =-\sum_{i=1}^m\measure{\stcompI{\subSpace}{i}}\left(\log\sup_{\observation{}{i}\in\stcompI{\subSpace}{i}}M_{\observation{}{i}}-\log m_{\norm{\observation{}{i}}}(\stcompI{\subSpace}{i})\right)-\upperbound_{\observationRV{}{m+1:n}}\left(\expectation{\log C_{pm}}{\observationsRV{}}\right)\;,
+				\\
+				\upperbound\nolimits_m  & =-\sum_{i=1}^m\measure{\stcompI{\subSpace}{i}}\left(\log\inf_{\observation{}{i}\in\stcompI{\subSpace}{i}}m_{\observation{}{i}}-\log M_{\norm{\observation{}{i}}}(\stcompI{\subSpace}{i})\right)\;,\\
+				\begin{split} \simplecondEntropy{\statesRV{}}{\observationsRV{}}{m}&\triangleq\entropy{\statesRV{}}+\expectation{\log\pnorm{\prod_{j=m+1}^n\probcond{\observationRV{}{j}}{\states{}}\prob{\states{}}}{q}{\states{}}}{\observationRV{}{m+1:n}}                    \\
+					&\phantomeq+\sum_{i=1}^m\partialexpectation{\log\pnorm{\probcond{\observationRV{}{i}}{\states{}}}{p}{\states{}}}{\subSpace_i}-\partialexpectation{\expectation{\log\probcond{\observationRV{}{i}}{\statesRV{}}}{\statesRV{}\mid\observationRV{}{i}}}{\subSpace_i}\;,
+				\end{split}
+			\end{align}
+		\end{subequations}
+	\end{small}
+	and
+	\begin{equation}
+		\begin{split}
+			& \upperbound_{\observationRV{}{1:m}}\left(\expectation{\log C_{pm}}{\observationsRV{}}\right)\\
+			& \quad=-\frac{m\log p}{p}-\frac{\log q}{q}\\
+			& \quad\phantomeq-\prod_{i=1}^m\measure{\subSpace_i}\Biggl(\expectation{\log m_{\states{}}}{\observationRV{}{m+1:n}}+\sum_{j=1}^m\frac{\partialexpectation{\log m_j}{\subSpace_j}}{\measure{\subSpace_j}}\Biggr) \\
+			& \quad\phantomeq+\E_{\observationRV{}{m+1:n}}\Biggl[\partexp_{\subSpace_1}\Biggl[\dotsi\partexp_{\subSpace_m}\Biggl[
+			\log \Biggl(\sum_{i=1}^{m} M_{\observation{}{i}}^{p-1}m_{\observation{}{i}}+M_{\states{}}^{q-1}m_{\states{}}\Biggr)\Biggr]\dotsi\Biggr]\Biggr]                                                                    \\
+			& \quad\phantomeq+\left(1-\prod_{i=1}^m\measure{\subSpace_i}\right)\Biggl(-\sum_{i=1}^m\log \inf m_{\observation{}{i}}\\
+			& \quad\quad\phantomeq+\E_{\observationRV{}{m+1:n}}\left[-\log m_{\states{}}+\log\left(\sum_{i=1}^{m}\left(\sup M_{\observation{}{i}}\right)^{p-1}\inf m_{\observation{}{i}} +M_{\states{}}^{q-1}m_{\states{}}\right)\right]\Biggr)
+		\end{split}
+	\end{equation}
+\end{proposition}
+\begin{proof}
+	$\condEntropy{\observationsRV{}}{\statesRV{}}=\sum\limits_{i=1}^{\abs{\observationsRV{}}}\condEntropy{\observationRV{}{i}}{\statesRV{}}$ assuming conditional independence of the observations, as such we can bound $\condEntropy{\observationsRV{}}{\statesRV{}}$ with a sum of bounds from \autoref{thm:observation_bounds} given the conditional independence of observations. Bounds on the normalizer entropy $\entropy{\observationsRV{}}$ are given by \autoref{thm:normalizer_bounds_struct}.
+\end{proof}
+
+Note that $m_{\norm{\observation{}{i}}}(\subSpace)\geq \inf\limits_{\observation{}{i}\in\subSpace}m_{\observation{}{i}}$ and $M_{\norm{\observation{}{i}}}(\subSpace)\leq \sup\limits_{\observation{}{i}\in\subSpace}M_{\observation{}{i}}$ and can be used to loosen the bounds if needed.
+
+
+\begin{proposition}
+	\label{thm:normalizer_bounds_struct}
+	$\lowerbound_m\leq\entropy{\observationsRV{}} -\simplentropy{\observationsRV{}}{m}\leq\upperbound_m$ for $\observationsRV{}=\observationRV{}{1:n}$, where:
+	\begin{subequations}
+		\begin{align}
+			\lowerbound\nolimits_m & =-\sum_{i=1}^m\measure{\stcompI{\subSpace}{i}}\log M_{\norm{\observation{}{i}}}(\stcompI{\subSpace}{i})\;, \\
+			\upperbound\nolimits_m & =-\sum_{i=1}^m\measure{\stcompI{\subSpace}{i}}\log m_{\norm{\observation{}{i}}}(\stcompI{\subSpace}{i})+\upperbound_{\observationRV{}{1:m}}\left(\expectation{\log C_{pm}}{\observationsRV{}}\right)\;,\\
+			\begin{split}
+				\simplentropy{\observationsRV{}}{m} & \triangleq-\sum_{i=1}^m\partialexpectation{\log\pnorm{\probcond{\observationRV{}{i}}{\states{}}}{p}{\states{}}}{\subSpace_i}\\
+				&\phantomeq-\expectation{\log\pnorm{\prod_{j=m+1}^n\probcond{\observationRV{}{j}}{\states{}}\prob{\states{}}}{q}{\states{}}}{\observationRV{}{m+1:n}}\;,
+			\end{split}
+		\end{align}
+	\end{subequations}
+	and
+	\begin{equation}
+		\begin{split}
+			& \upperbound_{\observationRV{}{1:m}}\left(\expectation{\log C_{pm}}{\observationsRV{}}\right)\\
+			& \quad=-\frac{m\log p}{p}-\frac{\log q}{q}
+			-\prod_{i=1}^m\measure{\subSpace_i}\Biggl(\expectation{\log m_{\states{}}}{\observationRV{}{m+1:n}}+\sum_{j=1}^m\frac{\partialexpectation{\log m_j}{\subSpace_j}}{\measure{\subSpace_j}}\Biggr) \\
+			& \quad\phantomeq+\E_{\observationRV{}{m+1:n}}\Biggl[\partexp_{\subSpace_1}\Biggl[\dotsi\partexp_{\subSpace_m}\Biggl[
+			\log \Biggl(\sum_{i=1}^{m} M_{\observation{}{i}}^{p-1}m_{\observation{}{i}}
+			+M_{\states{}}^{q-1}m_{\states{}}\Biggr)\Biggr]\dotsi\Biggr]\Biggr]\\
+			& \quad\phantomeq+\left(1-\prod_{i=1}^m\measure{\subSpace_i}\right)\Biggl(-\sum_{i=1}^m\log \inf m_{\observation{}{i}}\\
+			& \quad\phantomeq+\E_{\observationRV{}{m+1:n}}\Bigl[-\log m_{\states{}}
+			+\log\Bigl(\sum_{i=1}^{m}\left(\sup M_{\observation{}{i}}\right)^{p-1}\inf m_{\observation{}{i}}+M_{\states{}}^{q-1}m_{\states{}}\Bigr)\Bigr]\Biggr)
+		\end{split}
+	\end{equation}
+\end{proposition}
+\begin{proof}
+	For both bounds we begin by bounding the normalizer,
+	\begin{equation*}
+		\begin{split}
+			\prob{\observationsRV{}} & =\int\probcond{\observationRV{}{1:n}}{\states{}}\prob{\states{}}\D\states{}\\
+			& =\int\prod_{i=1}^n\probcond{\observationRV{}{i}}{\states{}}\prob{\states{}}\D\states{}
+		\end{split}
+	\end{equation*}
+	above by
+	\begin{equation}
+		\prob{\observationsRV{}}\leq\prod_{i=1}^{m}\pnorm{\probcond{\observationRV{}{i}}{\states{}}}{p}{\states{}}\pnorm{\prod_{j=m+1}^n\probcond{\observationRV{}{j}}{\states{}}\prob{\states{}}}{q}{\states{}}
+		\label{eq:holders}
+	\end{equation}
+	and below by (see~\cite{Wang77cmb})
+	\begin{equation}
+		\prob{\observationsRV{}}\geq C_{pm}^{-1}\prod_{i=1}^{m}\pnorm{\probcond{\observationRV{}{i}}{\states{}}}{p}{\states{}}\pnorm{\prod_{j=m+1}^n\probcond{\observationRV{}{j}}{\states{}}\prob{\states{}}}{q}{\states{}}\label{eq:reverse_holders}
+	\end{equation}
+	where $p=\frac{mq}{q-1}$ and
+	\begin{align*}
+		&C_{pm}\triangleq\frac{\sum_{i=1}^{m} K_i(p)+K_{m+1}(q)}{p^{m/p}q^{1/q}},\\
+		&K_i(p)\triangleq\frac{M_{\observation{}{i}}^{p-1}}{\displaystyle m_{\states{}}\prod_{k\neq i}m_k},&&
+		K_{m+1}(q)\triangleq\frac{M_{\states{}}^{q-1}}{\displaystyle\prod_{k}m_{\observation{i}{}}},\\
+		&M_{\observation{i}{}}\triangleq\sup_{\states{}}\probcond{\observationRV{i}{}}{\states{}},&&
+		m_{\observation{i}{}}\triangleq\inf_{\states{}}\probcond{\observationRV{i}{}}{\states{}},
+		\\
+		&M_{\states{}}\triangleq\sup_{\states{}}\prod_{j=m+1}^n\probcond{\observationRV{}{j}}{\states{}}\prob{\states{}},&&
+		m_{\states{}}\triangleq\inf_{\states{}}\prod_{j=m+1}^n\probcond{\observationRV{}{j}}{\states{}}\prob{\states{}},
+	\end{align*}
+	under the assumption that the infimum of the functions is greater than zero.
+
+	In the following we will prove the upper bound, the lower bound is derived in a similar manner but for $C_{pm}=1$. Applying inequalities \eqref{eq:reverse_holders}, and proposition \eqref{thm:bound_log} we find that entropy of the normalizer is bounded above
+	\begin{small}
+		\begin{align}
+			\begin{split}
+				\entropy{\observationsRV{}} & \leq\expectation{\log C_{pm}}{\observationRV{}{1:n}}
+				-\expectation{\sum_{i=1}^{m}\log\left(\pnorm{\probcond{\observationRV{}{i}}{\states{}}}{p}{\states{}}\right)}{\observationRV{}{1:n}}\\
+				&\phantomeq-\expectation{\log\pnorm{\prod_{j=m+1}^n\probcond{\observationRV{}{j}}{\states{}}\prob{\states{}}}{q}{\states{}}}{\observationRV{}{1:n}}
+			\end{split}\\
+			\begin{split}
+				& =\expectation{\log C_{pm}}{\observationRV{}{1:n}}
+				-\sum_{i=1}^{m}\expectation{\log\left(\pnorm{\probcond{\observationRV{}{i}}{\states{}}}{p}{\states{}}\right)}{\observationRV{}{i}}\\
+				&\phantomeq-\expectation{\log\pnorm{\prod_{j=m+1}^n\probcond{\observationRV{}{j}}{\states{}}\prob{\states{}}}{q}{\states{}}}{\observationRV{}{m+1:n}}
+			\end{split}\\
+			\begin{split}
+				& \leq\expectation{\log C_{pm}}{\observationRV{}{1:n}}
+				-\sum_{i=1}^{m}\partialexpectation{\log\left(\pnorm{\probcond{\observationRV{}{i}}{\states{}}}{p}{\states{}}\right)}{\subSpace_i}\\
+				&\phantomeq-\sum_{i=1}^{m}\measure{\stcompI{\subSpace}{i}}\inf_{\observation{}{i}\in\subSpace_i}\log\left(\pnorm{\probcond{\observation{}{i}}{\states{}}}{p}{\states{}}\right) \\
+				&\phantomeq-\expectation{\log\pnorm{\prod_{j=m+1}^n\probcond{\observationRV{}{j}}{\states{}}\prob{\states{}}}{q}{\states{}}}{\observationRV{}{m+1:n}}
+			\end{split} \\
+			\begin{split}
+				& \leq\expectation{\log C_{pm}}{\observationRV{}{1:n}}-\sum_{i=1}^{m}\partialexpectation{\log\left(\pnorm{\probcond{\observationRV{}{i}}{\states{}}}{p}{\states{}}\right)}{\subSpace_i}\\
+				& \phantomeq-\sum_{i=1}^{m}\measure{\stcompI{\subSpace}{i}}\log m_{\norm{\observation{}{i}}}(\stcompI{\subSpace}{i})-\expectation{\log\pnorm{\prod_{j=m+1}^n\probcond{\observationRV{}{j}}{\states{}}\prob{\states{}}}{q}{\states{}}}{\observationRV{}{m+1:n}}
+			\end{split}
+		\end{align}
+	\end{small}
+	Via the definition of $C_{pm}$ we can further refine the bound
+	\begin{align*}
+		\expectation{\log C_{pm}}{\observationRV{}{1:n}} & =-\frac{m\log p}{p}-\frac{\log q}{q}+\expectation{\log\frac{\sum_{i=1}^{m} M_{\observation{}{i}}^{p-1}m_{\observation{}{i}}+M_{\states{}}^{q-1}m_{\states{}}}{m_{\states{}}\prod_{i=1}^{m}m_{\observation{}{i}}}}{\observationRV{}{1:n}}\\
+		\begin{split}
+			& \leq-\frac{m\log p}{p}-\frac{\log q}{q}\\
+			& \phantomeq+\E_{\observationRV{}{m+1:n}}\Biggl[\partexp_{\subSpace_1\times\cdots\times\subSpace_m}\Biggl[
+			\log\frac{\sum_{i=1}^{m}M_{\observation{}{i}}^{p-1}m_{\observation{}{i}}+M_{\states{}}^{q-1}m_{\states{}}}{m_{\states{}}\prod_{i=1}^{m}m_{\observation{}{i}}}\Biggr] \\
+			&\phantomeq
+			+\left(1-\prod_{i=1}^m\measure{\subSpace_i}\right)\sup_{\observation{}{1:m}\in\stcomp{{\left(\subSpace_1\times\cdots\times\subSpace_m\right)}}}
+			\log\frac{\sum_{i=1}^{m} M_{\observation{}{i}}^{p-1}m_{\observation{}{i}}+M_{\states{}}^{q-1}m_{\states{}}}{m_{\states{}}\prod_{i=1}^{m}m_{\observation{}{i}}}\Biggr]
+		\end{split}\\
+		\begin{split}
+			& \leq-\frac{m\log p}{p}-\frac{\log q}{q}\\
+			& \phantomeq
+			-\prod_{i=1}^m\measure{\subSpace_i}\Biggl(\expectation{\log m_{\states{}}}{\observationRV{}{m+1:n}}
+			+\sum_{j=1}^m\frac{\partialexpectation{\log m_j}{\subSpace_j}}{\measure{\subSpace_j}}\Biggr)          \\
+			& \phantomeq
+			+\E_{\observationRV{}{m+1:n}}\Biggl[\partexp_{\subSpace_1}\Biggl[\dotsi\partexp_{\subSpace_m}\Biggl[
+			\log \Biggl(\sum_{i=1}^{m} M_{\observation{}{i}}^{p-1}m_{\observation{}{i}}
+			+M_{\states{}}^{q-1}m_{\states{}}\Biggr)\Biggr]\dotsi\Biggr]\Biggr]                                   \\
+			& \phantomeq
+			+\left(1-\prod_{i=1}^m\measure{\subSpace_i}\right)\Biggl(-\sum_{i=1}^m\log \inf m_{\observation{}{i}} \\
+			& \phantomeq
+			+\E_{\observationRV{}{m+1:n}}\Bigl[-\log m_{\states{}}
+			+\log\Bigl(\sum_{i=1}^{m}\left(\sup M_{\observation{}{i}}\right)^{p-1}\inf m_{\observation{}{i}}
+			+M_{\states{}}^{q-1}m_{\states{}}\Bigr)\Bigr]\Biggr)
+		\end{split}
+	\end{align*}
+\end{proof}

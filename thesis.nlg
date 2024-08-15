@@ -1,0 +1,10 @@
+This is makeindex, version 2.16 [MiKTeX 24.4].
+Scanning style file ./thesis.ist...........................done (27 attributes redefined, 0 ignored).
+Scanning input file thesis.ntn...
+!! Input index error (file = thesis.ntn, line = 1):
+   -- Illegal page number \relax or page_precedence rnaRA.
+.done (47 entries accepted, 1 rejected).
+Sorting entries....done (298 comparisons).
+Generating output file thesis.not....done (103 lines written, 0 warnings).
+Output written in thesis.not.
+Transcript written in thesis.nlg.

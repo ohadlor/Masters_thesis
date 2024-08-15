@@ -1,0 +1,103 @@
+\glossarysection[\glossarytoctitle]{\glossarytitle}\glossarypreamble
+\begin{theglossary}\glossaryheader
+\glsgroupheading{glssymbols}\relax \glsresetentrylist %
+\glossentry{symb:hist}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsignore{iii}}}%
+\glossentry{symb:prior_hist}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsignore{iii}}}%
+\glossentry{symb:landmarks}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsignore{iii}}}%
+\glossentry{symb:q-function}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsignore{iii}}}%
+\glossentry{symb:state_reward}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsignore{iii}}}%
+\glossentry{symb:variable}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsignore{iii}}}%
+\glossentry{symb:v-function}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsignore{iii}}}%
+\glossentry{symb:state}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsignore{iii}}}%
+\glossentry{symb:state_k}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsignore{iii}}}%
+\glossentry{symb:observations}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsignore{iii}}}%
+\glossentry{symb:simp_entropy}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsignore{iii}}}%
+\glossentry{symb:da}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsignore{iii}}}%
+\glossentry{symb:rv}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsignore{iii}}}%
+\glossentry{symb:expectation}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsignore{iii}}}%
+\glossentry{symb:measure}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsignore{iii}}}%
+\glossentry{symb:complement}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsignore{iii}}}%
+\glossentry{symb:normalizer}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsignore{iii}}}%
+\glossentry{symb:discount}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsignore{iii}}}%
+\glossentry{symb:estimator}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsignore{iii}}}%
+\glossentry{symb:pnorm}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsignore{iii}}}%
+\glossentry{symb:indicator}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsignore{iii}}}%
+\glossentry{symb:action_space}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsignore{iii}}}%
+\glossentry{symb:subspace}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsignore{iii}}}%
+\glossentry{symb:observation_model}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsignore{iii}}}%
+\glossentry{symb:variable_space}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsignore{iii}}}%
+\glossentry{symb:transition_model}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsignore{iii}}}%
+\glossentry{symb:stat_space}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsignore{iii}}}%
+\glossentry{symb:observation_space}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsignore{iii}}}%
+\glossentry{symb:partial}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsignore{iii}}}%
+\glossentry{symb:cond_entropy}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsignore{iii}}}%
+\glossentry{symb:entropy}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsignore{iii}}}%
+\glossentry{symb:bounds}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsignore{iii}}}%
+\glossentry{symb:prob}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsignore{iii}}}%
+\glossentry{symb:policy}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsignore{iii}}}%
+\glossentry{symb:belief_reward}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsignore{iii}}}%
+\glossentry{symb:action}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsignore{iii}}}%
+\glossentry{symb:belief}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsignore{iii}}}%
+\glossentry{symb:prior_belief}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsignore{iii}}}%
+\glossentry{symb:landmark}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsignore{iii}}}%
+\glossentry{symb:state_new}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsignore{iii}}}%
+\glossentry{symb:observation}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsignore{iii}}}\glsgroupskip
+\glsgroupheading{B}\relax \glsresetentrylist %
+\glossentry{bsp}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{6}}}\glsgroupskip
+\glsgroupheading{D}\relax \glsresetentrylist %
+\glossentry{da}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{6}}}\glsgroupskip
+\glsgroupheading{M}\relax \glsresetentrylist %
+\glossentry{mcts}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{7}}}\glsgroupskip
+\glsgroupheading{P}\relax \glsresetentrylist %
+\glossentry{pdf}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{9}}}%
+\glossentry{pomdp}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{1}}}\glsgroupskip
+\glsgroupheading{S}\relax \glsresetentrylist %
+\glossentry{slam}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{6}}}%
+\end{theglossary}\glossarypostamble

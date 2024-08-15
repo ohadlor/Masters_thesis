@@ -1,0 +1,136 @@
+% General-purpose definitions and inclusions
+% you are using in any document
+% (regardless of its class and style files used),
+% e.g. package uses:
+
+%\usepackage{xspace}
+
+% and macros/command defintions:
+
+%\newcommand{\complexityclass}[1]{{\bf #1}\xspace}
+%\newcommand{\NPTIME}{\complexityclass{NP}}
+
+% For this template, we'll only have one single command,
+% necessary for including graphics...
+\usepackage{graphicx}% http://ctan.org/pkg/graphicx
+
+%%% User settings
+\graphicspath{{./graphics/}}
+\usepackage[font= footnotesize]{subcaption}
+\usepackage{tablefootnote}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\DeclareMathOperator*{\argmin}{arg\,min}
+\DeclareMathOperator*{\argmax}{arg\,max}
+
+%\allowdisplaybreaks[0]
+
+\newcommand{\VI}[1]{\textcolor{Blue}{#1}}
+\newcommand{\OLO}[1]{\textcolor{Purple}{#1}}
+%%%%%%%%%%%%%% My commands
+
+%Environments
+% text
+\newcommand{\scare}[1]{`#1'}
+\newcommand{\tsups}[1]{\textsuperscript{#1}}
+\newcommand{\tsubs}[1]{\textsubscript{#1}}
+
+\newcommand{\phantomeq}{\mathrel{\phantom{=}}}
+
+% probability
+\newcommand{\prob}[1]{\ensuremath{\mathrm{P}\left({#1}\right)}}
+\newcommand{\probcond}[2]{\ensuremath{\mathrm{P}\left({#1}\mid{#2}\right)}}
+
+\newcommand{\Var}{\mathrm{Var}}
+
+\newcommand{\D}{\mathrm{d}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\R}{\mathbb{R}}
+\DeclareMathOperator*{\E}{\mathbb{E}}
+\newcommand{\expectation}[2]{\ensuremath{\E\limits_{#2}\left[{#1}\right]}}
+\newcommand{\condexpectation}[3]{\ensuremath{\E\limits_{#3}\left[{#1}\mid{#2}\right]}}
+%
+\DeclareMathOperator*{\estim}{\hat{\E}}
+\newcommand{\estimator}[2]{\ensuremath{\estim\limits_{#2}\left[{#1}\right]}}
+\newcommand{\condestimator}[3]{\ensuremath{\estim\limits_{#3}\left[{#1}\mid{#2}\right]}}
+%
+\newcommand{\partexp}{\ensuremath{\mathcal{E}}}
+\newcommand{\partialexpectation}[2]{\ensuremath{\partexp_{#2}\left[{#1}\right]}}
+\newcommand{\partialestimator}[2]{\ensuremath{\hat{\partexp}_{#2}\left[{#1}\right]}}
+
+\newcommand{\measure}[1]{\ensuremath{\mathbb{P}\left({#1}\right)}}
+\newcommand{\estimatedmeasure}[1]{\ensuremath{\hat{\mathbb{P}}\left({#1}\right)}}
+
+\newcommand{\subSpace}{\ensuremath{\mathcal B}}
+\newcommand{\subSpaceI}[1]{\ensuremath{\mathcal{B}_{#1}}}
+\newcommand{\stcomp}[1]{\ensuremath{{#1}^{\mathsf{c}}}}
+\newcommand{\stcompI}[2]{\ensuremath{{#1}^{\mathsf{c}}_{#2}}}
+
+%entropy
+\newcommand{\simplentropy}[2]{\ensuremath{\bar{\mathcal{H}}_{#2}\left({#1}\right)}}
+\newcommand{\entropy}[1]{\ensuremath{\mathcal{H}\left({#1}\right)}}
+\newcommand{\entropyEstimator}[1]{\ensuremath{\hat{\mathcal{H}}\left({#1}\right)}}
+\newcommand{\entropyF}[3]{\ensuremath{\mathcal{H}^{#2}_{#3}\left({#1}\right)}}
+\newcommand{\simplecondEntropy}[3]{\ensuremath{\bar{\mathcal{H}}_{#3}\left({#1}\mid{#2}\right)}}
+\newcommand{\condEntropy}[2]{\ensuremath{\mathcal{H}\left({#1}\mid{#2}\right)}}
+\newcommand{\condEntropyEstimator}[2]{\ensuremath{\hat{\mathcal{H}}\left({#1}\mid{#2}\right)}}
+
+%POMDP parameters
+
+\newcommand{\variable}{\ensuremath{S}}
+\newcommand{\RV}{\ensuremath{\boldsymbol S}}
+\newcommand{\variableI}{\ensuremath{T}}
+\newcommand{\RVI}{\ensuremath{\boldsymbol T}}
+\newcommand{\Space}{\ensuremath{\mathcal S}}
+\newcommand{\SpaceI}{\ensuremath{\mathcal T}}
+
+\newcommand{\weight}[2]{\ensuremath{w_{#1}^{#2}}}
+\newcommand{\weightI}[2]{\ensuremath{v_{#1}^{#2}}}
+
+\newcommand{\state}[1]{\ensuremath{x_{#1}}}
+\newcommand{\states}[1]{\ensuremath{X_{#1}}}
+\newcommand{\stateRV}[1]{\ensuremath{\boldsymbol x_{#1}}}
+\newcommand{\statesRV}[1]{\ensuremath{\boldsymbol X_{#1}}}
+\newcommand{\stateSpace}{\ensuremath{\mathcal X}}
+
+\newcommand{\totalstate}[1]{\ensuremath{s_{#1}}}
+\newcommand{\totalstateRV}[1]{\ensuremath{\boldsymbol s_{#1}}}
+\newcommand{\totalstates}[1]{\ensuremath{S_{#1}}}
+\newcommand{\totalstatesRV}[1]{\ensuremath{\boldsymbol S_{#1}}}
+
+\newcommand{\landmark}[1]{\ensuremath{l^{#1}}}
+\newcommand{\landmarks}[1]{\ensuremath{L_{#1}}}
+\newcommand{\landmarkRV}[1]{\ensuremath{\boldsymbol l^{#1}}}
+\newcommand{\landmarksRV}[1]{\ensuremath{\boldsymbol L_{#1}}}
+
+\newcommand{\observation}[2]{\ensuremath{z_{#1}^{#2}}}
+\newcommand{\observations}[1]{\ensuremath{Z_{#1}}}
+\newcommand{\observationRV}[2]{\ensuremath{\boldsymbol z_{#1}^{#2}}}
+\newcommand{\observationsRV}[1]{\ensuremath{\boldsymbol Z_{#1}}}
+\newcommand{\observationSpace}{\ensuremath{\mathcal Z}}
+
+\newcommand{\obstransition}{\ensuremath{\mathcal O}}
+\newcommand{\acttransition}{\ensuremath{\mathcal T}}
+\newcommand{\action}[1]{\ensuremath{{a_{#1}}}}
+\newcommand{\actionSpace}{\ensuremath{\mathcal A}}
+
+\newcommand{\normalizer}[1]{\ensuremath{\eta_{#1}}}
+\newcommand{\da}[2]{\ensuremath{\beta_{#1}^{#2}}}
+\newcommand{\daRV}[2]{\ensuremath{\boldsymbol \beta_{#1}^{#2}}}
+\newcommand{\dalikelihood}{\ensuremath{\mathcal D}}
+\newcommand{\blf}[1]{\ensuremath{b_{#1}}}
+\newcommand{\priorB}[1]{\ensuremath{\blf{#1}}^-}
+\newcommand{\hist}[1]{\ensuremath{H_{#1}}}
+\newcommand{\priorHist}[1]{\ensuremath{\hist{#1}^-}}
+\newcommand{\reward}[1]{\ensuremath{\rho\left(#1\right)}}
+
+% other
+
+\newcommand{\1}[1]{\ensuremath{\mathbbm{1}{\left\{#1\right\}}}}
+\DeclareMathOperator*{\lowerbound}{\mathcal{LB}}
+\DeclareMathOperator*{\upperbound}{\mathcal{UB}}
+\DeclarePairedDelimiter{\norm}{\lVert}{\rVert}%
+\DeclarePairedDelimiter{\abs}{\lvert}{\rvert}%
+\newcommand{\pnorm}[3]{\ensuremath{\norm*{#1}_{#2}^{(#3)}}}

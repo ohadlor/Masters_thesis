@@ -1,0 +1,354 @@
+% Use this file to create "glossary entries" for abbreviations and acronyms,
+% and other notation. The entries defined here don't necessarily have to be
+% used in the thesis (but then you have to decide whether or not to display
+% the unused entries).
+
+% For this file to compile (and the example text in the main/prelims.tex file),
+% the package glossaries-extra is required. It is automatically included unless
+% the noabbrevs class option is used.
+
+% The following will alter the style for typesetting abbreviations when using
+% the \gls command. Note you can also use multiple styles by categorizing
+% abbreviations; see the documentation for the glossaries-extras package at:
+% https://ctan.org/pkg/glossaries-extra
+%
+%\setabbreviationstyle[acronym]{long-short-sc}
+%
+% If you're wondering why we're setting the seemingly-redundant "notation
+% category", that's a hack discussed here:
+% https://tex.stackexchange.com/q/630541/5640
+
+
+\newacronym[%
+category=notation-category,%
+description=]
+{mcts}{MCTS}{Monte Carlo Tree Search}
+
+\newacronym[%
+category=notation-category,%
+description=]
+{bsp}{BSP}{Belief Space Planning}
+
+\newacronym[%
+category=notation-category,%
+description=,%
+longplural={Partially Observable Markov Decision Processes}]
+{pomdp}{POMDP}{Partially Observable Markov Decision Process}
+
+\newacronym[%
+category=notation-category,%
+description=]
+{da}{DA}{Data Association}
+
+\newacronym[%
+category=notation-category,%
+description=]
+{slam}{SLAM}{Simultaneous Localization and Mapping}
+
+\newacronym[%
+category=notation-category,%
+description=]
+{rv}{r.\,v.}{random variable}
+
+\newacronym[%
+category=notation-category,%
+description=]
+{pdf}{pdf}{probability density function}
+
+
+\newglossaryentry{symb:stat_space}{%
+	type=notation,%
+	category=notation-category,%
+	name=$\mathcal X$,%
+	description=State space%
+}
+
+\newglossaryentry{symb:observation_space}{%
+	type=notation,%
+	category=notation-category,%
+	name=$\mathcal Z$,%
+	description=Observation space%
+}
+
+\newglossaryentry{symb:action_space}{%
+	type=notation,%
+	category=notation-category,%
+	name=$\mathcal A$,%
+	description=Action space%
+}
+
+\newglossaryentry{symb:transition_model}{%
+	type=notation,%
+	category=notation-category,%
+	name=$\mathcal T$,%
+	description=Transition model%
+}
+
+\newglossaryentry{symb:observation_model}{%
+	type=notation,%
+	category=notation-category,%
+	name=$\mathcal O$,%
+	description=Observation model%
+}
+
+\newglossaryentry{symb:state_reward}{%
+	type=notation,%
+	category=notation-category,%
+	name=$R(\cdot)$,%
+	description=Reward%
+}
+
+\newglossaryentry{symb:belief_reward}{%
+	type=notation,%
+	category=notation-category,%
+	name=$\rho(\cdot)$,%
+	description=Expected reward%
+}
+
+\newglossaryentry{symb:discount}{%
+	type=notation,%
+	category=notation-category,%
+	name=$\gamma$,%
+	description=Discount factor%
+}
+
+\newglossaryentry{symb:rv}{%
+	type=notation,%
+	category=notation-category,%
+	name={$\boldsymbol S,\boldsymbol T$},%
+	description=Random variables%
+}
+
+\newglossaryentry{symb:variable}{%
+	type=notation,%
+	category=notation-category,%
+	name={$S$, $T$},%
+	description=Variables%
+}
+
+\newglossaryentry{symb:variable_space}{%
+	type=notation,%
+	category=notation-category,%
+	name={$\mathcal S$, $\mathcal T$},%
+	description=Variable spaces%
+}
+
+\newglossaryentry{symb:state}{%
+	type=notation,%
+	category=notation-category,%
+	name=$X$,%
+	description=State%
+}
+
+\newglossaryentry{symb:state_k}{%
+	type=notation,%
+	category=notation-category,%
+	name=$X_k$,%
+	description=State at time $k$%
+}
+
+\newglossaryentry{symb:state_new}{%
+	type=notation,%
+	category=notation-category,%
+	name=$x_k$,%
+	description=Concatenated state variable at time $k$ for smoothing%
+}
+
+\newglossaryentry{symb:landmark}{%
+	type=notation,%
+	category=notation-category,%
+	name=$l^i$,%
+	description=i\textsuperscript{th} landmark%
+}
+
+\newglossaryentry{symb:landmarks}{%
+	type=notation,%
+	category=notation-category,%
+	name=$L_k$,%
+	description=Set of landmarks at time $k$%
+}
+
+\newglossaryentry{symb:observation}{%
+	type=notation,%
+	category=notation-category,%
+	name=$z^{i}$,%
+	description=i\textsuperscript{th} observation%
+}
+
+\newglossaryentry{symb:observations}{%
+	type=notation,%
+	category=notation-category,%
+	name=$Z_{k}$,%
+	description=Set of observations at time $k$%
+}
+
+\newglossaryentry{symb:action}{%
+	type=notation,%
+	category=notation-category,%
+	name=$a_{k}$,%
+	description=Action at time $k$%
+}
+
+\newglossaryentry{symb:policy}{%
+	type=notation,%
+	category=notation-category,%
+	name=$\pi_{k}$,%
+	description=Policy at time $k$%
+}
+
+\newglossaryentry{symb:da}{%
+	type=notation,%
+	category=notation-category,%
+	name=$\beta_{k}$,%
+	description=Data association vector at time $k$%
+}
+
+\newglossaryentry{symb:hist}{%
+	type=notation,%
+	category=notation-category,%
+	name=$H_k$,%
+	description=History at time $k$%
+}
+
+\newglossaryentry{symb:prior_hist}{%
+	type=notation,%
+	category=notation-category,%
+	name=$H_k^-$,%
+	description=Prior history at time $k$%
+}
+
+\newglossaryentry{symb:belief}{%
+	type=notation,%
+	category=notation-category,%
+	name=$b_k$,%
+	description=Belief at time $k$%
+}
+
+\newglossaryentry{symb:prior_belief}{%
+	type=notation,%
+	category=notation-category,%
+	name=$b_k^-$,%
+	description=Prior belief at time $k$%
+}
+
+\newglossaryentry{symb:normalizer}{%
+	type=notation,%
+	category=notation-category,%
+	name=$\eta_{k}$,%
+	description=Bayesian normalizer at time $k$%
+}
+
+\newglossaryentry{symb:prob}{%
+	type=notation,%
+	category=notation-category,%
+	name=$\mathrm{P}\left(\cdot\right)$,%
+	description=Probability%
+}
+
+\newglossaryentry{symb:measure}{%
+	type=notation,%
+	category=notation-category,%
+	name=$\boldsymbol{P}\left(\cdot\right)$,%
+	description=Measure%
+}
+
+\newglossaryentry{symb:expectation}{%
+	type=notation,%
+	category=notation-category,%
+	name=$\boldsymbol{E}\left[\cdot\right]$,%
+	description=Expectation%
+}
+
+\newglossaryentry{symb:estimator}{%
+	type=notation,%
+	category=notation-category,%
+	name=$\hat{\boldsymbol{E}}\left[\cdot\right]$,%
+	description=Empirical estimator%
+}
+
+\newglossaryentry{symb:subspace}{%
+	type=notation,%
+	category=notation-category,%
+	name=$\mathcal B$,%
+	description=An arbitrary subspace%
+}
+
+\newglossaryentry{symb:partial}{%
+	type=notation,%
+	category=notation-category,%
+	name=$\mathcal{E}_{\mathcal B}\left[\cdot\right]$,%
+	description=Partial expectation with respect to the subset $\mathcal B$%
+}
+
+\newglossaryentry{symb:complement}{%
+	type=notation,%
+	category=notation-category,%
+	name=$\cdot^{\mathsf{c}}$,%
+	description=Complementary subset%
+}
+
+\newglossaryentry{symb:simp_entropy}{%
+	type=notation,%
+	category=notation-category,%
+	name={$\bar{\mathcal{H}}\left(\cdot\right)$},%
+	description=Simplified entropy%
+}
+
+\newglossaryentry{symb:entropy}{%
+	type=notation,%
+	category=notation-category,%
+	name=$\mathcal{H}\left(\cdot\right)$,%
+	description=Entropy%
+}
+
+\newglossaryentry{symb:cond_entropy}{%
+	type=notation,%
+	category=notation-category,%
+	name=$\mathcal{H}\left(\cdot\mid\cdot\right)$,%
+	description=Conditional entropy%
+}
+
+\usepackage{bbm}
+\newglossaryentry{symb:indicator}{%
+	type=notation,%
+	category=notation-category,%
+	name=$\mathbbm{1}\left\{\cdot\right\}$,%
+	description=Indicator function%
+}
+
+\newglossaryentry{symb:bounds}{%
+	type=notation,%
+	category=notation-category,%
+	name={$\mathcal{LB}$, $\mathcal{UB}$},%
+	description=Lower bound and upper bound respectively%
+}
+
+\newglossaryentry{symb:pnorm}{%
+	type=notation,%
+	category=notation-category,%
+	name=$\lVert\cdot\rVert^p_S$,%
+	description=p-norm with respect to $S$%
+}
+
+\newglossaryentry{symb:v-function}{%
+	type=notation,%
+	category=notation-category,%
+	name=$V^\pi(\cdot)$,%
+	description=Value function following policy $\pi$%
+}
+
+\newglossaryentry{symb:q-function}{%
+	type=notation,%
+	category=notation-category,%
+	name={$Q^\pi(\cdot,\cdot)$},%
+	description=Q-function following policy $\pi$%
+}
+
+% --------------------------------
+
+% Commands below will control the behavior/appearance of the list of abbreviations and acronyms
+
+% Uncomment this command to have _all_ abbreviations and acronyms defined
+% in this file appear in the final list - rather than just the ones you
+% use in the thesis
+\keepUnusedAbbreviations
