@@ -1,224 +1,375 @@
-@book{Knuth1981,
-  author      = {Donald E. Knuth},
-  title       = {The Art of Computer Programming, Volume II: Seminumerical
-                 Algorithms, 2nd Edition},
-  publisher   = {Addison-Wesley},
-  year        = {1981},
-  isbn        = {0-201-03822-6},
+@comment{BIBTEMPLATE .}
+@comment{BIBREFERENCES stdalphabetic}
+@comment{BIBSEPARATORS ",;&"}
+
+@string{_3dim = {Intl. Conf. on 3D Digital Imaging and Modeling}}
+@string{aaai = {AAAI Conf. on Artificial Intelligence}}
+@string{aamas = {Intl. Conf. on Autonomous Agents and Multiagent Systems (AAMAS)}}
+@string{ac = {IEEE Aerospace Conference}}
+@string{acc = {American Control Conference}}
+@string{accv = {Asian Conf. on Computer Vision (ACCV)}}
+@string{acra = {Australasian Conf. on Robotics and Automation (ACRA)}}
+@string{addison = {Addison-Wesley Publishing}}
+@string{aes = {{IEEE} Trans. Aerosp. Electron. Syst.}}
+@string{ai = {Artificial Intelligence}}
+@string{aicv94 = {Application of Invariance in Computer Vision}}
+@string{aim = {IEEE/ASME Intl. Conf. on Advanced Intelligent Mechatronics (AIM)}}
+@string{aips = {Intl. Conf. on Artificial Intelligence Planning Systems}}
+@string{ap = {Academic Press}}
+@string{ar = {Autonomous Robots}}
+@string{as = {{IEEE} Trans. Aerosp.}}
+@string{assp = {{IEEE} Trans. Acoust., Speech, Signal Processing}}
+@string{bmvc = {British Machine Vision Conf. (BMVC)}}
+@string{cdc = {IEEE Conference on Decision and Control}}
+@string{chap = {Chapman and Hall}}
+@string{cira = {IEEE Intl. Symp. on Computational Intelligence in Robotics and Automation (CIRA)}}
+@string{coc = {College of Computing, Georgia Institute of Technology}}
+@string{comp = {{IEEE} Trans. Computers}}
+@string{corl = {Conference on Robot Learning}}
+@string{csm = {IEEE Control Systems Magazine}}
+@string{cve = {ACM Intl. Conf. on Collaborative Virtual Environments (CVE)}}
+@string{cviu = {Computer Vision and Image Understanding}}
+@string{cvpr = {IEEE Conf. on Computer Vision and Pattern Recognition (CVPR)}}
+@string{ecai = {Eur. Conf. on AI (ECAI)}}
+@string{ecc = {European Control Conference}}
+@string{eccv = {European Conf. on Computer Vision (ECCV)}}
+@string{ecml = {European Conference on Machine Learning (ECML)}}
+@string{epb = {Environment and Planning B: Planning and Design}}
+@string{fg = {Intl. Conf. on Automatic Face and Gesture Recognition}}
+@string{focs = {Symp. on Foundations of Computer Science}}
+@string{fsr = {Field and Service Robotics (FSR)}}
+@string{fusion = {Intl. Conf. on Information Fusion, FUSION}}
+@string{gecco = {Conf. on Genetic and Evolutionary Computation (GECCO)}}
+@string{gmip = {CVGIP:Graphical Models and Image Processing}}
+@string{gnc = {AIAA Guidance, Navigation, and Control Conference}}
+@string{iapr = {Intl. Conf. on Image Processing A}}
+@string{icann = {Intl. Conf. on Artificial Neural Networks}}
+@string{icaps = {International Conference on Automated Planning and Scheduling (ICAPS)}}
+@string{icassp = {Intl. Conf. Acoust., Speech, and Signal Proc. (ICASSP)}}
+@string{iccv = {Intl. Conf. on Computer Vision (ICCV)}}
+@string{icfp = {Intl. Conf. on Functional Programming (ICFP)}}
+@string{icip = {Intl. Conf. on Image Processing (ICIP)}}
+@string{icme = {IEEE Intl. Conf. on Multimedia and Expo(ICME)}}
+@string{icml = {Intl. Conf. on Machine Learning (ICML)}}
+@string{icpr = {Intl. Conf. on Pattern Recognition (ICPR)}}
+@string{icra = {IEEE Intl. Conf. on Robotics and Automation (ICRA)}}
+@string{ictai = {Intl. Conf. on Tools with Artificial Intelligence (ICTAI)}}
+@string{icuas = {International Conference on Unmanned Aircraft Systems (ICUAS)}}
+@string{ieeepress = {IEEE Computer Society Press}}
+@string{ijcai = {Intl. Joint Conf. on AI (IJCAI)}}
+@string{ijcv = {Intl. J. of Computer Vision}}
+@string{ijrr = {Intl. J. of Robotics Research}}
+@string{ip = {{IEEE} Trans. Image Processing}}
+@string{ipsn = {Intl. Sym. on Information Processing in Sensor Networks (IPSN)}}
+@string{iros = {IEEE/RSJ Intl. Conf. on Intelligent Robots and Systems (IROS)}}
+@string{isar = {IEEE and ACM Intl. Sym. on Augmented Reality (ISAR)}}
+@string{iser = {Intl. Sym. on Experimental Robotics (ISER)}}
+@string{ismar = {IEEE and ACM Intl. Sym. on Mixed and Augmented Reality (ISMAR)}}
+@string{ismr = {Intl. Sym. on Mixed Reality (ISMR)}}
+@string{isrr = {Proc. of the Intl. Symp. of Robotics Research (ISRR)}}
+@string{iswc = {IEEE Intl. Sym. on Wearable Computers (ISWC)}}
+@string{it = {{IEEE} Trans. Inform. Theory}}
+@string{itac = {{IEEE} Trans. Automat. Contr.}}
+@string{iuw = {DARPA Image Understanding Workshop (IUW)}}
+@string{iv = {IEEE Intelligent Vehicles Symposium (IV)}}
+@string{ivc = {Image and Vision Computing}}
+@string{ivis = {IEEE Visualization}}
+@string{jair = {J. of Artificial Intelligence Research}}
+@string{jasa = {J. of the American Statistical Association}}
+@string{jcst = {Journal of Computer Science and Technology}}
+@string{jeplmc = {J. of Experimental Psychology: Learning,Memory, \& Cognition}}
+@string{jfr = {J. of Field Robotics}}
+@string{jif = {Information Fusion}}
+@string{jirs = {J. of Intelligent and Robotic Systems}}
+@string{jmlr = {J. of Machine Learning Research}}
+@string{josaa = {J. of the Optical Society of America A}}
+@string{jpdc = {J. of Parallel and Distributed Computing}}
+@string{jvcir = {J. of Visual Communication and Image Representation}}
+@string{kdd = {Intl. Conf. Knowledge Discovery and Data Mining (KDD)}}
+@string{kluwer = {Kluwer}}
+@string{med = {Mediterranean Conference on Control and Automation}}
+@string{mit = {The MIT press, Cambridge, MA}}
+@string{ml = {Machine learning}}
+@string{msc = {Multiconference on Systems and Control}}
+@string{nips = {Advances in Neural Information Processing Systems (NIPS)}}
+@string{pami = {{IEEE} Trans. Pattern Anal. Machine Intell.}}
+@string{plans = {IEEE/ION Position Location and Navigation System (PLANS) Conference}}
+@string{pr = {Pattern Recognition}}
+@string{prl = {Pattern Recognition Letters}}
+@string{pvt = {3D Data Processing Visualization and Transmission (3DPVT)}}
+@string{ral = {{IEEE} Robotics and Automation Letters (RA-L)}}
+@string{ras = {Robotics and Autonomous Systems}}
+@string{royalp = {Proceedings of Royal Society of London}}
+@string{rss = {Robotics: Science and Systems (RSS)}}
+@string{rvs95 = {Representation of Visual Scenes}}
+@string{scl = {Systems \& Control Letters}}
+@string{siggraph = {SIGGRAPH}}
+@string{sigir = {ACM Special Interest Group on Information Retrieval}}
+@string{smc = {{IEEE} Trans. Syst., Man, Cybern.}}
+@string{sp = {{IEEE} Trans. Signal Processing}}
+@string{spie = {Intl. Soc. Opt. Eng. (SPIE)}}
+@string{springer = {Springer Verlag}}
+@string{ssrr = {IEEE Intl. Conf. on Safety, Security and Rescue Robotics (SSRR)}}
+@string{stoc = {ACM Symp. on Theory of Computing (STOC)}}
+@string{tac = {IEEE Transactions on Automatic Control}}
+@string{tcs = {Theoretical Computer Science}}
+@string{tra = {{IEEE} Trans. Robot. Automat.}}
+@string{tro = {{IEEE} Trans. Robotics}}
+@string{tsmca = {IEEE Transactions on Systems, Man, and Cybernetics, Part A}}
+@string{uai = {Conf. on Uncertainty in Artificial Intelligence (UAI)}}
+@string{wacv = {IEEE Workshop on Applications of Computer Vision (WACV)}}
+@string{wafr = {Intl. Workshop on the Algorithmic Foundations of Robotics (WAFR)}}
+@string{wiley = {John Wiley \& Sons, New York, NY}}
+
+
+@inproceedings{Barenboim22ijcai,
+  author    = {M. Barenboim and V. Indelman},
+  booktitle = {the 31st International Joint Conference on
+               Artificial Intelligence and the 25th European
+               Conference on Artificial Intelligence (IJCAI-ECAI)},
+  location  = {Vienna, Austria},
+  month     = {July},
+  title     = {Adaptive Information Belief Space Planning},
+  year      = 2022
 }
 
-@book{Knuth1973,
-  author      = {Donald E. Knuth},
-  title       = {The Art of Computer Programming, Volume I: Fundamental Algorithms,
-                 2nd Edition.},
-  publisher   = {Addison-Wesley},
-  year        = {1973},
-  bibsource   = {DBLP, http://dblp.uni-trier.de}
+@inproceedings{Barenboim23nips,
+  author    = {M. Barenboim and V. Indelman},
+  booktitle = NIPS,
+  location  = {New Orleans, USA},
+  month     = {December},
+  title     = {Online POMDP Planning with Anytime Deterministic Guarantees},
+  year      = 2023
 }
 
-@book{Papadimitriou1994,
-  title       = {Computational Complexity},
-  booktitle   = {Computational Complexity},
-  author      = {Christos M. Papadimitriou},
-  ISBN        = {0201530821},
-  publisher   = {Addison-Wesley},
-  address     = {Reading, Massachusetts},
-  year        = {1994},
+@article{Bentkus08lmj,
+  author  = {Bentkus, V.},
+  year    = {2008},
+  month   = {01},
+  pages   = {137-157},
+  title   = {An extension of the Hoeffding inequality to unbounded random variables},
+  volume  = {48},
+  journal = {Lithuanian Mathematical Journal},
+  doi     = {10.1007/s10986-008-9007-7}
 }
 
-@book{AHU1982,
-  author      = {Alfred V. Aho and
-                 John E. Hopcroft and
-                 Jeffrey D. Ullman},
-  title       = {Data Structures and Algorithms},
-  year        = {1982},
-  publisher   = {Addison-Wesley},
-  series      = {Addison-Wesley Series in Computer Science and Information Processing},
- }
-
-@book{AHU1974,
-  author      = {Alfred V. Aho and
-                 John E. Hopcroft and
-                 Jeffrey D. Ullman},
-  title       = {The Design and Analysis of Computer Algorithms},
-  year        = {1974},
-  publisher   = {Addison-Wesley},
-  series      = {Addison-Wesley Series in Computer Science and Information Processing},
- }
-
-@book{CLR,
-  author      = {Thomas H. Cormen and
-                 Clifford Stein and
-                 Ronald L. Rivest and
-                 Charles E. Leiserson},
-  title       = {Introduction to Algorithms},
-  year        = {2001},
-  isbn        = {0070131511},
-  publisher   = {McGraw-Hill Higher Education},
+@article{Bhat22spl,
+  title   = {Generalizations of some concentration inequalities},
+  journal = {Statistics and Probability Letters},
+  volume  = 182,
+  pages   = 109298,
+  year    = 2022,
+  issn    = {0167-7152},
+  doi     = {https://doi.org/10.1016/j.spl.2021.109298},
+  url     = {https://www.sciencedirect.com/science/article/pii/S0167715221002601},
+  author  = {M. Ashraf Bhat and G. Sankara Raju Kosuru}
 }
 
-@book{HU,
-  author      = {John E. Hopcroft and
-                 Jeffrey D. Ullman},
-  year        = {1979},
-  title       = {Introduction to Automata Theory, Languages, and Computation},
-  publisher   = {Addison-Wesley},
-  address     = {Reading, Massachusetts}
+@inproceedings{Boers10fusion,
+  author     = {Y. {Boers} and H. {Driessen} and A. {Bagchi} and
+                P. {Mandal}},
+  booktitle  = {2010 13th International Conference on Information
+                Fusion},
+  doi        = {10.1109/ICIF.2010.5712013},
+  pages      = {1-8},
+  title      = {Particle filter based entropy},
+  year       = 2010,
+  bdsk-url-1 = {https://doi.org/10.1109/ICIF.2010.5712013}
 }
 
-@Book{ASE,
-  author      = {Noga Alon and Joel H. Spencer and Paul Erd{\H{o}}s},
-  title       = {The Probabilistic Method},
-  publisher   = {John Wiley and Sons, Inc.},
-  year        = {1992},
-  series      = {Wiley-Interscience Series in Discrete Mathematics and Optimization},
+@article{Castillo23arxiv,
+  title         = {Enhancing Markov and Chebyshev's inequalities},
+  author        = {Joan del Castillo},
+  year          = {2023},
+  eprint        = {2308.04053},
+  archiveprefix = {arXiv},
+  primaryclass  = {math.ST}
 }
 
-@article{Gowers2007,
-  author      = {William Timothy Gowers},
-  title       = {Hypergraph regularity and the multidimensional Szemer\'{e}di theorem},
-  journal     = {Annals of Mathematics},
-  volume      = {166},
-  number      = {3},
-  year        = {2007},
-  pages       = {897--946},
-  doi         = {http://dx.doi.org/10.4007/annals.2007.166.897 },
-  publisher   = {Princeton University & Institute of Advanced Studies},
-  address     = {Princeton, NJ, USA}
+@article{Cohen15as,
+  author    = {Joel E. Cohen},
+  title     = {Markov's Inequality and Chebyshev's Inequality for Tail Probabilities: A Sharper Image},
+  journal   = {The American Statistician},
+  volume    = {69},
+  number    = {1},
+  pages     = {5--7},
+  year      = {2015},
+  publisher = {Taylor \& Francis},
+  doi       = {10.1080/00031305.2014.975842}
 }
 
-@article{Gowers2006,
-  author      = {William Timothy Gowers},
-  title       = {Quasirandomness, Counting and Regularity for 3-Uniform Hypergraphs},
-  journal     = {Combinatorics, Probability and Computing},
-  volume      = {15},
-  issue       = {1-2},
-  month       = {January},
-  year        = {2006},
-  issn        = {0963-5483},
-  pages       = {143--184},
-  numpages    = {42},
-  doi         = {10.1017/S0963548305007236},
-  publisher   = {Cambridge University Press},
-  address     = {New York, NY, USA},
+@book{Durrett19book,
+  author    = {Durrett, Rick},
+  publisher = {Cambridge university press},
+  title     = {Probability: theory and examples},
+  volume    = 49,
+  year      = 2019
 }
 
-@article{Pikhurko2010,
-  author      = {Oleg Pikhorko},
-  title       = {An analytic approach to stability},
-  journal     = {Discrete Mathematics},
-  volume      = {310},
-  number      = {21},
-  pages       = {2951 - 2964},
-  year        = {2010},
+@inproceedings{Fischer20icml,
+  address   = {Vienna, Austria},
+  author    = {Johannes Fischer and Omer Sahin Tas},
+  booktitle = ICML,
+  title     = {Information Particle Filter Tree: An Online
+               Algorithm for POMDPs with Belief-Based Rewards on
+               Continuous Domains},
+  year      = 2020
 }
 
-@article{NN,
-  author      = {Joseph (Seffi) Naor and
-                 Moni Naor},
-  title       = {Small-bias probability spaces: efficient constructions and applications},
-  journal     = {SIAM Journal on Computing},
-  volume      = {22},
-  issue       = {4},
-  month       = {August},
-  year        = {1993},
-  pages       = {838--856},
-  publisher   = {Society for Industrial and Applied Mathematics},
-  address     = {Philadelphia, PA, USA},
-  note        = {An earlier version appeared in the proceedings of the 22\xnd STOC, 1990},
+@article{From13jscs,
+  author    = {Steven G. From and Andrew W. Swift},
+  title     = {A refinement of Hoeffding's inequality},
+  journal   = {Journal of Statistical Computation and Simulation},
+  volume    = {83},
+  number    = {5},
+  pages     = {977--983},
+  year      = {2013},
+  publisher = {Taylor \& Francis},
+  doi       = {10.1080/00949655.2011.644290}
 }
 
-@article {AGHP,
-  author      = {Noga Alon and
-                 Oded Goldreich and
-                 Johan H{\aa}stad and
-                 Ren\'{e} Peralta},
-  title       = {Simple Constructions of Almost k-wise Independent Random Variables},
-  journal     = {Random Structures \& Algorithms},
-  volume      = {3},
-  number      = {3},
-  publisher   = {Wiley Subscription Services, Inc., A Wiley Company},
-  pages       = {289--304},
-  year        = {1992},
+@inproceedings{Garg19rss,
+  author    = {Garg, Neha P and Hsu, David and Lee, Wee Sun},
+  booktitle = RSS,
+  title     = {DESPOT-$\alpha$: Online POMDP Planning With Large
+               State And Observation Spaces},
+  year      = 2019
 }
 
-@book{Papadimitriou,
-  author      = {Christos H. Papadimitriou},
-  address     = {Massachussetts},
-  publisher   = {Addison Wesley Publishing Company},
-  title       = {Computational Complexity},
-  year        = {1994}
+@article{Hoeffding63jasa,
+  author    = {Hoeffding, Wassily},
+  journal   = {Journal of the American Statistical Association},
+  number    = 301,
+  pages     = {13--30},
+  publisher = {Springer},
+  title     = {"Probability inequalities for sums of bounded random
+               variables"},
+  volume    = 58,
+  year      = 1963
 }
 
-@incollection{Shaltiel,
-  author      = {Ronen Shaltiel},
-  title       = {Recent Developments in Explicit Constructions of Extractors},
-  booktitle   = {Current Trends in Theoretical Computer Science: The Challenge of the New Century},
-  editor      = {G. Paun and G. Rozenberg and A. Salomaa},
-  publisher   = {World Scientific Publishing},
-  year        = {2004},
-  volume      = {1},
-  pages       = {229--264},
+@book{Koller09book,
+  author    = {D. Koller and N. Friedman},
+  publisher = {The MIT Press},
+  title     = {Probabilistic Graphical Models: Principles and
+               Techniques},
+  year      = 2009
 }
 
-@inproceedings{Yao1977,
-  author      = {Andrew Chi-Chih Yao},
-  title       = {Probabilistic Computations: Toward a Unified Measure of
-                 Complexity (Extended Abstract)},
-  booktitle   = {18th FOCS},
-  year        = {1977},
-  pages       = {222-227},
+@article{Ogasawara21,
+  author    = {Haruhiko Ogasawara},
+  title     = {Improvements of the Markov and Chebyshev
+               inequalities using the partial expectation},
+  journal   = {Communications in Statistics - Theory and Methods},
+  volume    = 50,
+  number    = 1,
+  pages     = {116-131},
+  year      = 2021,
+  publisher = {Taylor & Francis},
+  doi       = {10.1080/03610926.2019.1630438},
+  url       = { https://doi.org/10.1080/03610926.2019.1630438 },
+  eprint    = { https://doi.org/10.1080/03610926.2019.1630438 }
 }
 
-@article{Behrend,
-  author      = {Felix A. Behrend},
-  title       = {On sets of integers which contain no three terms in arithmetical progression},
-  journal     = {Proceedings of the National Academy of Sciences of the USA},
-  volume      = {32},
-  year        = {1946},
-  pages       = {331--332},
+@article{Papadimitriou87math,
+  author  = {C. Papadimitriou and J. Tsitsiklis},
+  journal = {Mathematics of operations research},
+  number  = 3,
+  pages   = {441--450},
+  title   = {The complexity of {Markov} decision processes},
+  volume  = 12,
+  year    = 1987
 }
 
-@article{ABI,
-  author      = {Noga Alon and
-                 Laszlo Babai and
-                 Alon Itai},
-  title       = {A fast and simple randomized parallel algorithm for the maximal independent set problem},
-  journal     = {Journal of Algorithms},
-  volume      = {7},
-  number      = {4},
-  pages       = {567--583},
-  year        = {1986},
-  issn        = {0196-6774},
-  url         = {http://www.sciencedirect.com/science/article/pii/0196677486900192},
+@article{Ramdas23arxiv,
+  title         = {Randomized and Exchangeable Improvements of Markov's, Chebyshev's and Chernoff's Inequalities},
+  author        = {Aaditya Ramdas and Tudor Manole},
+  year          = {2023},
+  eprint        = {2304.02611},
+  archiveprefix = {arXiv},
+  primaryclass  = {math.ST}
 }
 
-@misc{Ishigami,
-  author      = {Yoshiyasu Ishigami},
-  title       = {A Simple Regularization of Hypergraphs},
-  year        = {2009},
-  note        = {available from the following URL:\\ \url{http://arxiv.org/abs/math/0612838}},
+@inproceedings{Shienman22icra,
+  author    = {M. Shienman and V. Indelman},
+  booktitle = ICRA,
+  title     = {D2A-BSP: Distilled Data Association Belief Space
+               Planning with Performance Guarantees Under Budget
+               Constraints},
+  year      = 2022
 }
 
-@article {NRS,
-  author      = {Brendan Nagle and
-                 Vojt\v{e}ch R\"{o}dl and
-                 Mathias Schacht},
-  title       = {The counting lemma for regular k-uniform hypergraphs},
-  journal     = {Random Structures \& Algorithms},
-  volume      = {28},
-  number      = {2},
-  publisher   = {Wiley Subscription Services, Inc., A Wiley Company},
-  pages       = {113--179},
-  year        = {2006},
+@article{Shienman24arxiv,
+  title         = {A Slices Perspective for Incremental Nonparametric Inference in High Dimensional State Spaces},
+  author        = {Moshe Shienman and Ohad Levy-Or and Michael Kaess and Vadim Indelman},
+  year          = 2024,
+  eprint        = {2405.16453},
+  archiveprefix = {arXiv},
+  primaryclass  = {cs.AI},
+  url           = {https://arxiv.org/abs/2405.16453}
 }
 
+@inproceedings{Silver10nips,
+  author    = {Silver, David and Veness, Joel},
+  booktitle = NIPS,
+  pages     = {2164--2172},
+  title     = {Monte-Carlo planning in large POMDPs},
+  year      = 2010
+}
 
-@article{Hoeffding,
-  author      = {Wassily Hoeffding},
-  title       = {Probability inequalities for sums of bounded random variables},
-  journal     = {Journal of the American Statistical Association},
-  volume      = {58},
-  pages       = {13--30},
-  year        = {1963},
+@inproceedings{Sunberg18icaps,
+  author    = {Sunberg, Zachary and Kochenderfer, Mykel},
+  booktitle = {Proceedings of the International Conference on
+               Automated Planning and Scheduling},
+  number    = 1,
+  title     = {Online algorithms for POMDPs with continuous state,
+               action, and observation spaces},
+  volume    = 28,
+  year      = 2018
+}
+
+@inproceedings{Sztyglic22iros,
+  author    = {Sztyglic, Ori and Indelman, Vadim},
+  booktitle = IROS,
+  title     = {Speeding up Online POMDP Planning via
+               Simplification},
+  year      = 2022
+}
+
+@article{Thomas21arxiv,
+  author  = {Thomas, Vincent and Hutin, Geremy and Buffet,
+             Olivier},
+  journal = {arXiv preprint arXiv:2103.11345},
+  title   = {Monte Carlo Information-Oriented Planning},
+  year    = 2021
+}
+
+@article{Wang77cmb,
+  title     = {Variants of the Hölder Inequality and its Inverses},
+  volume    = 20,
+  doi       = {10.4153/CMB-1977-056-5},
+  number    = 3,
+  journal   = {Canadian Mathematical Bulletin},
+  publisher = {Cambridge University Press},
+  author    = {Wang, Chung-Lie},
+  year      = 1977,
+  pages     = {377–384}
+}
+
+@article{Ye17jair,
+  author  = {Ye, Nan and Somani, Adhiraj and Hsu, David and Lee,
+             Wee Sun},
+  journal = {JAIR},
+  pages   = {231--266},
+  title   = {DESPOT: Online POMDP planning with regularization},
+  volume  = 58,
+  year    = 2017
+}
+
+@article{Yotam24tro,
+  title   = {Measurement Simplification in$\backslash$rho-POMDP with Performance Guarantees},
+  author  = {Yotam, Tom and Indelman, Vadim},
+  journal = TRO,
+  year    = 2024,
+  note    = {Accepted.}
 }

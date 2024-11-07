@@ -323,7 +323,7 @@
 \iitthesis@thesisdatafield{financialAcknowledgementHebrew}{אני מודה לטכניון על התמיכה הכספית הנדיבה בהשתלמותי.}
 % Regulations require the English abstract contain 200-500 words.
 \iitthesis@thesisdatafield{abstractEnglish}{Abstract of the thesis.}
-% Regulations require the Hebrew abstract contain 1,000-2,000 words.
+% Regulations require the Hebrew abstract contain 500-2,000 words.
 \iitthesis@thesisdatafield{abstractHebrew}{תקציר החיבור.}
 \iitthesis@thesisdatafield{abbreviationsAndNotation}{Notation and Abbreviations listing here.}
 

@@ -311,14 +311,14 @@ We can now apply the bounds from \cref{thm:general_bounds}.
 			\begin{split}
 				\lowerbound &=\log\left(\sum\limits_{i=1}^n\weight{}{i}\probcond{\observations{}^\prime}{\states{}^{\prime i}}+\left(1-\sum\limits_{i=1}^n\weight{}{i}\right)\inf\limits_{j\in[n+1,N]}\probcond{\observations{}^\prime}{\states{}^{\prime j}}\right) \\
 				& \phantomeq-\left(1-\sum_{i=1}^n\weight{}{\prime i}\right)\log\sup_{j\in[n+1,N]}\probcond{\observations{}^\prime}{\states{}^{\prime j}}\\
-				&\phantomeq-\sum_{i=1}^n\weight{}{\prime i}\log\left(\sum_{j=1}^n\weight{}{j}\probcond{\states{}^{\prime i}}{\states{}^j}+\sup_{j\in[n+1,N]}\probcond{\states{}^{\prime i}}{\states{}^j}\right)\\
-				& \phantomeq-\left(1-\sum_{i=1}^n\weight{}{\prime i}\right)\log\left(\sup_{i\in[n+1,N]}\sum_{j=1}^n\weight{}{j}\probcond{\states{}^{\prime i}}{\states{}^j}+\sup_{i,j\in[n+1,N]}\probcond{\states{}^{\prime i}}{\states{}^j}\right)
+				&\phantomeq-\sum_{i=1}^n\weight{}{\prime i}\log\left(\sum_{j=1}^n\weight{}{j}\probcond{\states{}^{\prime i}}{\states{}^j}+\left(1-\sum\limits_{j=1}^n\weight{}{j}\right)\sup_{j\in[n+1,N]}\probcond{\states{}^{\prime i}}{\states{}^j}\right)\\
+				& \phantomeq-\left(1-\sum_{i=1}^n\weight{}{\prime i}\right)\log\left(\sup_{i\in[n+1,N]}\sum_{j=1}^n\weight{}{j}\probcond{\states{}^{\prime i}}{\states{}^j}+\left(1-\sum\limits_{j=1}^n\weight{}{j}\right)\sup_{i,j\in[n+1,N]}\probcond{\states{}^{\prime i}}{\states{}^j}\right)
 			\end{split} \\
 			\begin{split}
 				\upperbound & =\log\left(\sum\limits_{i=1}^n\weight{}{i}\probcond{\observations{}^\prime}{\states{}^{\prime i}}+\left(1-\sum\limits_{i=1}^n\weight{}{i}\right)\sup\limits_{j\in[n+1,N]}\probcond{\observations{}^\prime}{\states{}^{\prime j}}\right) \\
 				& \phantomeq-\left(1-\sum_{i=1}^n\weight{}{\prime i}\right)\log\inf_{j\in[n+1,N]}\probcond{\observations{}^\prime}{\states{}^{\prime j}}\\
-				&\phantomeq-\sum_{i=1}^n\weight{}{\prime i}\log\left(\sum_{j=1}^n\weight{}{j}\probcond{\states{}^{\prime i}}{\states{}^j}+\inf_{j\in[n+1,N]}\probcond{\states{}^{\prime i}}{\states{}^j}\right)\\
-				& \phantomeq-\left(1-\sum_{i=1}^n\weight{}{\prime i}\right)\log\left(\inf_{i\in[n+1,N]}\sum_{j=1}^n\weight{}{j}\probcond{\states{}^{\prime i}}{\states{}^j}+\inf_{i,j\in[n+1,N]}\probcond{\states{}^{\prime i}}{\states{}^j}\right)
+				&\phantomeq-\sum_{i=1}^n\weight{}{\prime i}\log\left(\sum_{j=1}^n\weight{}{j}\probcond{\states{}^{\prime i}}{\states{}^j}+\left(1-\sum\limits_{j=1}^n\weight{}{j}\right)\inf_{j\in[n+1,N]}\probcond{\states{}^{\prime i}}{\states{}^j}\right)\\
+				& \phantomeq-\left(1-\sum_{i=1}^n\weight{}{\prime i}\right)\log\left(\inf_{i\in[n+1,N]}\sum_{j=1}^n\weight{}{j}\probcond{\states{}^{\prime i}}{\states{}^j}+\left(1-\sum\limits_{j=1}^n\weight{}{j}\right)\inf_{i,j\in[n+1,N]}\probcond{\states{}^{\prime i}}{\states{}^j}\right)
 			\end{split}\\
 			\simplentropy{\statesRV{}^\prime}{} & \triangleq-\sum_{i=1}^n\weight{}{\prime i}\log\probcond{\observations{}^\prime}{\states{}^{\prime i}}
 		\end{align}
@@ -334,19 +334,19 @@ We can now apply the bounds from \cref{thm:general_bounds}.
 		\begin{split}
 			&\leq\log\left(\partialestimator{\probcond{\observations{}^\prime}{\statesRV{}^\prime}}{\subSpace}+\estimatedmeasure{\stcomp{\subSpace}}\sup_{\stcomp{\subSpace}}\probcond{\observations{}^\prime}{\states{}^\prime}\right)\\
 			&\phantomeq-\partialestimator{\log\probcond{\observations{}^\prime}{\statesRV{}^\prime}}{\subSpace^\prime}-\estimatedmeasure{\stcomp{\subSpace^\prime}}\inf_{\stcomp{\subSpace^\prime}}\log\probcond{\observations{}^\prime}{\states{}^\prime}\\
-			&\phantomeq-\estimator{\log\left(\partialestimator{\probcond{\statesRV{}^\prime}{\statesRV{}}}{\subSpace}+\inf_{\stcomp{\subSpace}}\probcond{\statesRV{}^\prime}{\states{}}\right)}{\statesRV{}^\prime}
+			&\phantomeq-\estimator{\log\left(\partialestimator{\probcond{\statesRV{}^\prime}{\statesRV{}}}{\subSpace}+\estimatedmeasure{\stcomp{\subSpace}}\inf_{\stcomp{\subSpace}}\probcond{\statesRV{}^\prime}{\states{}}\right)}{\statesRV{}^\prime}
 		\end{split}\\
 		\begin{split}
 			&\leq\log\left(\partialestimator{\probcond{\observations{}^\prime}{\statesRV{}^\prime}}{\subSpace}+\estimatedmeasure{\stcomp{\subSpace}}\sup_{\stcomp{\subSpace}}\probcond{\observations{}^\prime}{\states{}^\prime}\right)\\
 			&\phantomeq-\partialestimator{\log\probcond{\observations{}^\prime}{\statesRV{}^\prime}}{\subSpace^\prime}-\estimatedmeasure{\stcomp{\subSpace^\prime}}\inf_{\stcomp{\subSpace^\prime}}\log\probcond{\observations{}^\prime}{\states{}^\prime}\\
-			&\phantomeq-\partialestimator{\log\left(\partialestimator{\probcond{\statesRV{}^\prime}{\statesRV{}}}{\subSpace}+\inf_{\stcomp{\subSpace}}\probcond{\statesRV{}^\prime}{\states{}}\right)}{\subSpace^\prime}\\
-			&\phantomeq-\estimatedmeasure{\stcomp{\subSpace^\prime}}\inf_{\stcomp{\subSpace^\prime}}\log\left(\partialestimator{\probcond{\states{}^\prime}{\statesRV{}}}{\subSpace}+\inf_{\stcomp{\subSpace}}\probcond{\states{}^\prime}{\states{}}\right)
+			&\phantomeq-\partialestimator{\log\left(\partialestimator{\probcond{\statesRV{}^\prime}{\statesRV{}}}{\subSpace}+\estimatedmeasure{\stcomp{\subSpace}}\inf_{\stcomp{\subSpace}}\probcond{\statesRV{}^\prime}{\states{}}\right)}{\subSpace^\prime}\\
+			&\phantomeq-\estimatedmeasure{\stcomp{\subSpace^\prime}}\inf_{\stcomp{\subSpace^\prime}}\log\left(\partialestimator{\probcond{\states{}^\prime}{\statesRV{}}}{\subSpace}+\estimatedmeasure{\stcomp{\subSpace}}\inf_{\stcomp{\subSpace}}\probcond{\states{}^\prime}{\states{}}\right)
 		\end{split}\\
 		\begin{split}
 			&\leq\log\left(\partialestimator{\probcond{\observations{}^\prime}{\statesRV{}^\prime}}{\subSpace}+\estimatedmeasure{\stcomp{\subSpace}}\sup_{\stcomp{\subSpace}}\probcond{\observations{}^\prime}{\states{}^\prime}\right)\\
 			&\phantomeq-\partialestimator{\log\probcond{\observations{}^\prime}{\statesRV{}^\prime}}{\subSpace^\prime}-\estimatedmeasure{\stcomp{\subSpace^\prime}}\log\inf_{\stcomp{\subSpace^\prime}}\probcond{\observations{}^\prime}{\states{}^\prime}\\
-			&\phantomeq-\partialestimator{\log\left(\partialestimator{\probcond{\statesRV{}^\prime}{\statesRV{}}}{\subSpace}+\inf_{\stcomp{\subSpace}}\probcond{\statesRV{}^\prime}{\states{}}\right)}{\subSpace^\prime}\\
-			&\phantomeq-\estimatedmeasure{\stcomp{\subSpace^\prime}}\log\left(\inf_{\stcomp{\subSpace^\prime}}\partialestimator{\probcond{\states{}^\prime}{\statesRV{}}}{\subSpace}+\inf_{\stcomp{\subSpace},\stcomp{\subSpace^\prime}}\probcond{\states{}^\prime}{\states{}}\right)
+			&\phantomeq-\partialestimator{\log\left(\partialestimator{\probcond{\statesRV{}^\prime}{\statesRV{}}}{\subSpace}+\estimatedmeasure{\stcomp{\subSpace}}\inf_{\stcomp{\subSpace}}\probcond{\statesRV{}^\prime}{\states{}}\right)}{\subSpace^\prime}\\
+			&\phantomeq-\estimatedmeasure{\stcomp{\subSpace^\prime}}\log\left(\inf_{\stcomp{\subSpace^\prime}}\partialestimator{\probcond{\states{}^\prime}{\statesRV{}}}{\subSpace}+\estimatedmeasure{\stcomp{\subSpace}}\inf_{\stcomp{\subSpace},\stcomp{\subSpace^\prime}}\probcond{\states{}^\prime}{\states{}}\right)
 		\end{split}
 	\end{align}
 \end{proof}
@@ -360,15 +360,15 @@ The computational complexity of the bounds, assuming that the supremum and infim
 		\begin{align}
 			\begin{split}
 				\lowerbound & =\log\left(\sum\limits_{i=1}^n\weight{}{i}\probcond{\observations{}^\prime}{\states{}^{\prime i}}+\left(1-\sum\limits_{i=1}^n\weight{}{i}\right)m_{\observations{}^\prime}\right) \\
-				&\phantomeq-\sum_{i=1}^n\weight{}{\prime i}\log\left(\sum_{j=1}^n\weight{}{j}\probcond{\states{}^{\prime i}}{\states{}^j}+M_{\states{}}\right)\\
+				&\phantomeq-\sum_{i=1}^n\weight{}{\prime i}\log\left(\sum_{j=1}^n\weight{}{j}\probcond{\states{}^{\prime i}}{\states{}^j}+\left(1-\sum\limits_{i=1}^n\weight{}{i}\right)M_{\states{}}\right)\\
 				& \phantomeq-\left(1-\sum_{i=1}^n\weight{}{\prime i}\right)\left(\log M_{\states{}}+\log M_{\observations{}^\prime}\right)
 			\end{split}\\
 			\begin{split}
 				\upperbound & =\log\left(\sum\limits_{i=1}^n\weight{}{i}\probcond{\observations{}^\prime}{\states{}^{\prime i}}+\left(1-\sum\limits_{i=1}^n\weight{}{i}\right)M_{\observations{}^\prime}\right) \\
-				&\phantomeq-\sum_{i=1}^n\weight{}{\prime i}\log\left(\sum_{j=1}^n\weight{}{j}\probcond{\states{}^{\prime i}}{\states{}^j}+m_{\states{}}\right)\\
+				&\phantomeq-\sum_{i=1}^n\weight{}{\prime i}\log\left(\sum_{j=1}^n\weight{}{j}\probcond{\states{}^{\prime i}}{\states{}^j}+\left(1-\sum\limits_{i=1}^n\weight{}{i}\right)m_{\states{}}\right)\\
 				& \phantomeq-\left(1-\sum_{i=1}^n\weight{}{\prime i}\right)\left(\log m_{\states{}}+\log m_{\observations{}^\prime}\right)
 			\end{split}\\
-			\simplentropy{\statesRV{}^\prime}{} & \triangleq-\sum_{i=1}^n\weight{}{\prime i}\log\probcond{\observations{}^\prime}{\states{}^{\prime i}}-\left(1-\sum\limits_{i=1}^n\weight{}{\prime i}\right)\log\left(1+\sum\limits_{i=1}^n\weight{}{i}\right)
+			\simplentropy{\statesRV{}^\prime}{} & \triangleq-\sum_{i=1}^n\weight{}{\prime i}\log\probcond{\observations{}^\prime}{\states{}^{\prime i}}
 		\end{align}
 	\end{subequations}
 	and we define $m_{\states{}}\triangleq\inf\limits_{\states{},\states{}^\prime}\probcond{\states{}^\prime}{\states{}}$, $M_{\states{}}\triangleq\sup\limits_{\states{},\states{}^\prime}\probcond{\states{}^\prime}{\states{}}$, $m_{\observations{}}\triangleq\inf\limits_{\states{}}\probcond{\observations{}}{\states{}}$, and $M_{\observations{}}\triangleq\sup\limits_{\states{}}\probcond{\observations{}}{\states{}}$.
@@ -376,22 +376,22 @@ The computational complexity of the bounds, assuming that the supremum and infim
 \begin{proof}
 	\begin{align}
 		\begin{split}
-			\entropyEstimator{\statesRV{}^\prime}&\leq\log\left(\partialestimator{\probcond{\observations{}^\prime}{\statesRV{}^\prime}}{\subSpace}+\estimatedmeasure{\stcomp{\subSpace}}\sup_{\stcomp{\subSpace}}\probcond{\observations{}^\prime}{\states{}^\prime}\right)\\
+			&\leq\log\left(\partialestimator{\probcond{\observations{}^\prime}{\statesRV{}^\prime}}{\subSpace}+\estimatedmeasure{\stcomp{\subSpace}}\sup_{\stcomp{\subSpace}}\probcond{\observations{}^\prime}{\states{}^\prime}\right)\\
 			&\phantomeq-\partialestimator{\log\probcond{\observations{}^\prime}{\statesRV{}^\prime}}{\subSpace^\prime}-\estimatedmeasure{\stcomp{\subSpace^\prime}}\log\inf_{\stcomp{\subSpace^\prime}}\probcond{\observations{}^\prime}{\states{}^\prime}\\
-			&\phantomeq-\partialestimator{\log\left(\partialestimator{\probcond{\statesRV{}^\prime}{\statesRV{}}}{\subSpace}+\inf_{\stcomp{\subSpace}}\probcond{\statesRV{}^\prime}{\states{}}\right)}{\subSpace^\prime}\\
-			&\phantomeq-\estimatedmeasure{\stcomp{\subSpace^\prime}}\log\left(\inf_{\stcomp{\subSpace^\prime}}\partialestimator{\probcond{\states{}^\prime}{\statesRV{}}}{\subSpace}+\inf_{\stcomp{\subSpace},\stcomp{\subSpace^\prime}}\probcond{\states{}^\prime}{\states{}}\right)
+			&\phantomeq-\partialestimator{\log\left(\partialestimator{\probcond{\statesRV{}^\prime}{\statesRV{}}}{\subSpace}+\estimatedmeasure{\stcomp{\subSpace}}\inf_{\stcomp{\subSpace}}\probcond{\statesRV{}^\prime}{\states{}}\right)}{\subSpace^\prime}\\
+			&\phantomeq-\estimatedmeasure{\stcomp{\subSpace^\prime}}\log\left(\inf_{\stcomp{\subSpace^\prime}}\partialestimator{\probcond{\states{}^\prime}{\statesRV{}}}{\subSpace}+\estimatedmeasure{\stcomp{\subSpace}}\inf_{\stcomp{\subSpace},\stcomp{\subSpace^\prime}}\probcond{\states{}^\prime}{\states{}}\right)
 		\end{split}\\
 		\begin{split}
 			&\leq\log\left(\partialestimator{\probcond{\observations{}^\prime}{\statesRV{}^\prime}}{\subSpace}+\estimatedmeasure{\stcomp{\subSpace}}M_{\observations{}^\prime}\right)\\
 			&\phantomeq-\partialestimator{\log\probcond{\observations{}^\prime}{\statesRV{}^\prime}}{\subSpace^\prime}-\estimatedmeasure{\stcomp{\subSpace^\prime}}\log m_{\observations{}^\prime}\\
-			&\phantomeq-\partialestimator{\log\left(\partialestimator{\probcond{\statesRV{}^\prime}{\statesRV{}}}{\subSpace}+m_{\states{}}\right)}{\subSpace^\prime}\\
-			&\phantomeq-\estimatedmeasure{\stcomp{\subSpace^\prime}}\log\left(\left(\estimatedmeasure{\subSpace}+1\right)m_{\states{}}\right)
+			&\phantomeq-\partialestimator{\log\left(\partialestimator{\probcond{\statesRV{}^\prime}{\statesRV{}}}{\subSpace}+\estimatedmeasure{\stcomp{\subSpace}}m_{\states{}}\right)}{\subSpace^\prime}\\
+			&\phantomeq-\estimatedmeasure{\stcomp{\subSpace^\prime}}\log m_{\states{}}
 		\end{split}\\
 		\begin{split}
 			&=\log\left(\partialestimator{\probcond{\observations{}^\prime}{\statesRV{}^\prime}}{\subSpace}+\estimatedmeasure{\stcomp{\subSpace}}M_{\observations{}^\prime}\right)\\
 			&\phantomeq-\partialestimator{\log\probcond{\observations{}^\prime}{\statesRV{}^\prime}}{\subSpace^\prime}\\
-			&\phantomeq-\partialestimator{\log\left(\partialestimator{\probcond{\statesRV{}^\prime}{\statesRV{}}}{\subSpace}+m_{\states{}}\right)}{\subSpace^\prime}\\
-			&\phantomeq-\estimatedmeasure{\stcomp{\subSpace^\prime}}\log\left(\estimatedmeasure{\subSpace}+1\right) -\estimatedmeasure{\stcomp{\subSpace^\prime}}\left(\log m_{\states{}}+\log m_{\observations{}^\prime}\right)
+			&\phantomeq-\partialestimator{\log\left(\partialestimator{\probcond{\statesRV{}^\prime}{\statesRV{}}}{\subSpace}+\estimatedmeasure{\stcomp{\subSpace}}m_{\states{}}\right)}{\subSpace^\prime}\\
+			&\phantomeq-\estimatedmeasure{\stcomp{\subSpace^\prime}}\left(\log m_{\states{}}+\log m_{\observations{}^\prime}\right)
 		\end{split}
 	\end{align}
 \end{proof}

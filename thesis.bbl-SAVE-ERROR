@@ -1,0 +1,1058 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{anyt/global//global/global/global}
+    \entry{Boers10fusion}{inproceedings}{}{}
+      \name{author}{4}{}{%
+        {{hash=d3939bbc073db20ba22e1c56563564b6}{%
+           family={{Boers}},
+           familyi={B\bibinitperiod},
+           given={Y.},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=0be6301d23768b849e7a7a99f04248e7}{%
+           family={{Driessen}},
+           familyi={D\bibinitperiod},
+           given={H.},
+           giveni={H\bibinitperiod}}}%
+        {{hash=22181e532bffa8a59a8e85a98b0789e3}{%
+           family={{Bagchi}},
+           familyi={B\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=5766309009ecfcda2100e9d85614acf8}{%
+           family={{Mandal}},
+           familyi={M\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{8087fd5b9b3c7321ec50af0ede3676c0}
+      \strng{fullhash}{8087fd5b9b3c7321ec50af0ede3676c0}
+      \strng{fullhashraw}{8087fd5b9b3c7321ec50af0ede3676c0}
+      \strng{bibnamehash}{8087fd5b9b3c7321ec50af0ede3676c0}
+      \strng{authorbibnamehash}{8087fd5b9b3c7321ec50af0ede3676c0}
+      \strng{authornamehash}{8087fd5b9b3c7321ec50af0ede3676c0}
+      \strng{authorfullhash}{8087fd5b9b3c7321ec50af0ede3676c0}
+      \strng{authorfullhashraw}{8087fd5b9b3c7321ec50af0ede3676c0}
+      \field{labelalpha}{BDBM10}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2010 13th International Conference on Information Fusion}
+      \field{title}{Particle filter based entropy}
+      \field{year}{2010}
+      \field{pages}{1\bibrangedash 8}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1109/ICIF.2010.5712013
+      \endverb
+    \endentry
+    \entry{Bentkus08lmj}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=62b86792713d7a26ce9c7dbe7c1f1a7e}{%
+           family={Bentkus},
+           familyi={B\bibinitperiod},
+           given={V.},
+           giveni={V\bibinitperiod}}}%
+      }
+      \strng{namehash}{62b86792713d7a26ce9c7dbe7c1f1a7e}
+      \strng{fullhash}{62b86792713d7a26ce9c7dbe7c1f1a7e}
+      \strng{fullhashraw}{62b86792713d7a26ce9c7dbe7c1f1a7e}
+      \strng{bibnamehash}{62b86792713d7a26ce9c7dbe7c1f1a7e}
+      \strng{authorbibnamehash}{62b86792713d7a26ce9c7dbe7c1f1a7e}
+      \strng{authornamehash}{62b86792713d7a26ce9c7dbe7c1f1a7e}
+      \strng{authorfullhash}{62b86792713d7a26ce9c7dbe7c1f1a7e}
+      \strng{authorfullhashraw}{62b86792713d7a26ce9c7dbe7c1f1a7e}
+      \field{labelalpha}{Ben08}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Lithuanian Mathematical Journal}
+      \field{month}{01}
+      \field{title}{An extension of the Hoeffding inequality to unbounded random variables}
+      \field{volume}{48}
+      \field{year}{2008}
+      \field{pages}{137\bibrangedash 157}
+      \range{pages}{21}
+      \verb{doi}
+      \verb 10.1007/s10986-008-9007-7
+      \endverb
+    \endentry
+    \entry{Barenboim22ijcai}{inproceedings}{}{}
+      \name{author}{2}{}{%
+        {{hash=937a0d4327d7d98fdbc16b7031c52955}{%
+           family={Barenboim},
+           familyi={B\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=8eb79a90f565c8b87268badbe74ba4d7}{%
+           family={Indelman},
+           familyi={I\bibinitperiod},
+           given={V.},
+           giveni={V\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Vienna, Austria}%
+      }
+      \strng{namehash}{20b7a87c7f867537a07c110815e30961}
+      \strng{fullhash}{20b7a87c7f867537a07c110815e30961}
+      \strng{fullhashraw}{20b7a87c7f867537a07c110815e30961}
+      \strng{bibnamehash}{20b7a87c7f867537a07c110815e30961}
+      \strng{authorbibnamehash}{20b7a87c7f867537a07c110815e30961}
+      \strng{authornamehash}{20b7a87c7f867537a07c110815e30961}
+      \strng{authorfullhash}{20b7a87c7f867537a07c110815e30961}
+      \strng{authorfullhashraw}{20b7a87c7f867537a07c110815e30961}
+      \field{extraname}{1}
+      \field{labelalpha}{BI22}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{the 31st International Joint Conference on Artificial Intelligence and the 25th European Conference on Artificial Intelligence (IJCAI-ECAI)}
+      \field{month}{7}
+      \field{title}{Adaptive Information Belief Space Planning}
+      \field{year}{2022}
+    \endentry
+    \entry{Barenboim23nips}{inproceedings}{}{}
+      \name{author}{2}{}{%
+        {{hash=937a0d4327d7d98fdbc16b7031c52955}{%
+           family={Barenboim},
+           familyi={B\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=8eb79a90f565c8b87268badbe74ba4d7}{%
+           family={Indelman},
+           familyi={I\bibinitperiod},
+           given={V.},
+           giveni={V\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {New Orleans, USA}%
+      }
+      \strng{namehash}{20b7a87c7f867537a07c110815e30961}
+      \strng{fullhash}{20b7a87c7f867537a07c110815e30961}
+      \strng{fullhashraw}{20b7a87c7f867537a07c110815e30961}
+      \strng{bibnamehash}{20b7a87c7f867537a07c110815e30961}
+      \strng{authorbibnamehash}{20b7a87c7f867537a07c110815e30961}
+      \strng{authornamehash}{20b7a87c7f867537a07c110815e30961}
+      \strng{authorfullhash}{20b7a87c7f867537a07c110815e30961}
+      \strng{authorfullhashraw}{20b7a87c7f867537a07c110815e30961}
+      \field{extraname}{2}
+      \field{labelalpha}{BI23}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Advances in Neural Information Processing Systems (NIPS)}
+      \field{month}{12}
+      \field{title}{Online POMDP Planning with Anytime Deterministic Guarantees}
+      \field{year}{2023}
+    \endentry
+    \entry{Bhat22spl}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=b9437ed9ae916f83198c970c65c1bb0f}{%
+           family={Bhat},
+           familyi={B\bibinitperiod},
+           given={M.\bibnamedelimi Ashraf},
+           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=d31b4fa3589df58ce157f6df7798a2bc}{%
+           family={Kosuru},
+           familyi={K\bibinitperiod},
+           given={G.\bibnamedelimi Sankara\bibnamedelima Raju},
+           giveni={G\bibinitperiod\bibinitdelim S\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \strng{namehash}{0dc2d29c121f859de56e01e0005fa062}
+      \strng{fullhash}{0dc2d29c121f859de56e01e0005fa062}
+      \strng{fullhashraw}{0dc2d29c121f859de56e01e0005fa062}
+      \strng{bibnamehash}{0dc2d29c121f859de56e01e0005fa062}
+      \strng{authorbibnamehash}{0dc2d29c121f859de56e01e0005fa062}
+      \strng{authornamehash}{0dc2d29c121f859de56e01e0005fa062}
+      \strng{authorfullhash}{0dc2d29c121f859de56e01e0005fa062}
+      \strng{authorfullhashraw}{0dc2d29c121f859de56e01e0005fa062}
+      \field{labelalpha}{BK22}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0167-7152}
+      \field{journaltitle}{Statistics and Probability Letters}
+      \field{title}{Generalizations of some concentration inequalities}
+      \field{volume}{182}
+      \field{year}{2022}
+      \field{pages}{109298}
+      \range{pages}{1}
+      \verb{doi}
+      \verb https://doi.org/10.1016/j.spl.2021.109298
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0167715221002601
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0167715221002601
+      \endverb
+    \endentry
+    \entry{Cohen15as}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=1b5f0760d7fb42a800175e78c42ffb7e}{%
+           family={Cohen},
+           familyi={C\bibinitperiod},
+           given={Joel\bibnamedelima E.},
+           giveni={J\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Taylor \& Francis}%
+      }
+      \strng{namehash}{1b5f0760d7fb42a800175e78c42ffb7e}
+      \strng{fullhash}{1b5f0760d7fb42a800175e78c42ffb7e}
+      \strng{fullhashraw}{1b5f0760d7fb42a800175e78c42ffb7e}
+      \strng{bibnamehash}{1b5f0760d7fb42a800175e78c42ffb7e}
+      \strng{authorbibnamehash}{1b5f0760d7fb42a800175e78c42ffb7e}
+      \strng{authornamehash}{1b5f0760d7fb42a800175e78c42ffb7e}
+      \strng{authorfullhash}{1b5f0760d7fb42a800175e78c42ffb7e}
+      \strng{authorfullhashraw}{1b5f0760d7fb42a800175e78c42ffb7e}
+      \field{labelalpha}{Coh15}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The American Statistician}
+      \field{number}{1}
+      \field{title}{Markov's Inequality and Chebyshev's Inequality for Tail Probabilities: A Sharper Image}
+      \field{volume}{69}
+      \field{year}{2015}
+      \field{pages}{5\bibrangedash 7}
+      \range{pages}{3}
+      \verb{doi}
+      \verb 10.1080/00031305.2014.975842
+      \endverb
+    \endentry
+    \entry{Castillo23arxiv}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=13b2c91198ee8d1088ee44e547db54db}{%
+           family={Castillo},
+           familyi={C\bibinitperiod},
+           given={Joan},
+           giveni={J\bibinitperiod},
+           prefix={del},
+           prefixi={d\bibinitperiod}}}%
+      }
+      \strng{namehash}{13b2c91198ee8d1088ee44e547db54db}
+      \strng{fullhash}{13b2c91198ee8d1088ee44e547db54db}
+      \strng{fullhashraw}{13b2c91198ee8d1088ee44e547db54db}
+      \strng{bibnamehash}{13b2c91198ee8d1088ee44e547db54db}
+      \strng{authorbibnamehash}{13b2c91198ee8d1088ee44e547db54db}
+      \strng{authornamehash}{13b2c91198ee8d1088ee44e547db54db}
+      \strng{authorfullhash}{13b2c91198ee8d1088ee44e547db54db}
+      \strng{authorfullhashraw}{13b2c91198ee8d1088ee44e547db54db}
+      \field{labelalpha}{dCas23}
+      \field{sortinit}{d}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{math.ST}
+      \field{eprinttype}{arXiv}
+      \field{title}{Enhancing Markov and Chebyshev's inequalities}
+      \field{year}{2023}
+      \verb{eprint}
+      \verb 2308.04053
+      \endverb
+    \endentry
+    \entry{Durrett19book}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=175a15e34b656dab74bea645e2ed84d0}{%
+           family={Durrett},
+           familyi={D\bibinitperiod},
+           given={Rick},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge university press}%
+      }
+      \strng{namehash}{175a15e34b656dab74bea645e2ed84d0}
+      \strng{fullhash}{175a15e34b656dab74bea645e2ed84d0}
+      \strng{fullhashraw}{175a15e34b656dab74bea645e2ed84d0}
+      \strng{bibnamehash}{175a15e34b656dab74bea645e2ed84d0}
+      \strng{authorbibnamehash}{175a15e34b656dab74bea645e2ed84d0}
+      \strng{authornamehash}{175a15e34b656dab74bea645e2ed84d0}
+      \strng{authorfullhash}{175a15e34b656dab74bea645e2ed84d0}
+      \strng{authorfullhashraw}{175a15e34b656dab74bea645e2ed84d0}
+      \field{labelalpha}{Dur19}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Probability: theory and examples}
+      \field{volume}{49}
+      \field{year}{2019}
+    \endentry
+    \entry{From13jscs}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=601db1a8fb7ef6b0eda94b3cfbed77df}{%
+           family={From},
+           familyi={F\bibinitperiod},
+           given={Steven\bibnamedelima G.},
+           giveni={S\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=c43ecd7acc1374ef3021239fe899b045}{%
+           family={Swift},
+           familyi={S\bibinitperiod},
+           given={Andrew\bibnamedelima W.},
+           giveni={A\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Taylor \& Francis}%
+      }
+      \strng{namehash}{24d9b33c38e60c95b7530e724318c7a5}
+      \strng{fullhash}{24d9b33c38e60c95b7530e724318c7a5}
+      \strng{fullhashraw}{24d9b33c38e60c95b7530e724318c7a5}
+      \strng{bibnamehash}{24d9b33c38e60c95b7530e724318c7a5}
+      \strng{authorbibnamehash}{24d9b33c38e60c95b7530e724318c7a5}
+      \strng{authornamehash}{24d9b33c38e60c95b7530e724318c7a5}
+      \strng{authorfullhash}{24d9b33c38e60c95b7530e724318c7a5}
+      \strng{authorfullhashraw}{24d9b33c38e60c95b7530e724318c7a5}
+      \field{labelalpha}{FS13}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Statistical Computation and Simulation}
+      \field{number}{5}
+      \field{title}{A refinement of Hoeffding's inequality}
+      \field{volume}{83}
+      \field{year}{2013}
+      \field{pages}{977\bibrangedash 983}
+      \range{pages}{7}
+      \verb{doi}
+      \verb 10.1080/00949655.2011.644290
+      \endverb
+    \endentry
+    \entry{Fischer20icml}{inproceedings}{}{}
+      \name{author}{2}{}{%
+        {{hash=9b60cd082a07aafc491064665d4c1705}{%
+           family={Fischer},
+           familyi={F\bibinitperiod},
+           given={Johannes},
+           giveni={J\bibinitperiod}}}%
+        {{hash=0f5acc4bc393bc1572e4c848c271df23}{%
+           family={Tas},
+           familyi={T\bibinitperiod},
+           given={Omer\bibnamedelima Sahin},
+           giveni={O\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Vienna, Austria}%
+      }
+      \strng{namehash}{b7a901469c99b1d574e5f62a67d8a96b}
+      \strng{fullhash}{b7a901469c99b1d574e5f62a67d8a96b}
+      \strng{fullhashraw}{b7a901469c99b1d574e5f62a67d8a96b}
+      \strng{bibnamehash}{b7a901469c99b1d574e5f62a67d8a96b}
+      \strng{authorbibnamehash}{b7a901469c99b1d574e5f62a67d8a96b}
+      \strng{authornamehash}{b7a901469c99b1d574e5f62a67d8a96b}
+      \strng{authorfullhash}{b7a901469c99b1d574e5f62a67d8a96b}
+      \strng{authorfullhashraw}{b7a901469c99b1d574e5f62a67d8a96b}
+      \field{labelalpha}{FT20}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Intl. Conf. on Machine Learning (ICML)}
+      \field{title}{Information Particle Filter Tree: An Online Algorithm for POMDPs with Belief-Based Rewards on Continuous Domains}
+      \field{year}{2020}
+    \endentry
+    \entry{Garg19rss}{inproceedings}{}{}
+      \name{author}{3}{}{%
+        {{hash=f43ed0ff5d639231e887031665fff5b0}{%
+           family={Garg},
+           familyi={G\bibinitperiod},
+           given={Neha\bibnamedelima P},
+           giveni={N\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=335adf1f352b65a9575abf76521fb446}{%
+           family={Hsu},
+           familyi={H\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+        {{hash=94d0309c8aab7c058e550b60c05572de}{%
+           family={Lee},
+           familyi={L\bibinitperiod},
+           given={Wee\bibnamedelima Sun},
+           giveni={W\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \strng{namehash}{e0e94e0ec06e5f7bcb6cc2791df8025f}
+      \strng{fullhash}{e0e94e0ec06e5f7bcb6cc2791df8025f}
+      \strng{fullhashraw}{e0e94e0ec06e5f7bcb6cc2791df8025f}
+      \strng{bibnamehash}{e0e94e0ec06e5f7bcb6cc2791df8025f}
+      \strng{authorbibnamehash}{e0e94e0ec06e5f7bcb6cc2791df8025f}
+      \strng{authornamehash}{e0e94e0ec06e5f7bcb6cc2791df8025f}
+      \strng{authorfullhash}{e0e94e0ec06e5f7bcb6cc2791df8025f}
+      \strng{authorfullhashraw}{e0e94e0ec06e5f7bcb6cc2791df8025f}
+      \field{labelalpha}{GHL19}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Robotics: Science and Systems (RSS)}
+      \field{title}{DESPOT-$\alpha$: Online POMDP Planning With Large State And Observation Spaces}
+      \field{year}{2019}
+    \endentry
+    \entry{Hoeffding63jasa}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=26d3c01664dc4b0c60afbdf4153437e2}{%
+           family={Hoeffding},
+           familyi={H\bibinitperiod},
+           given={Wassily},
+           giveni={W\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{26d3c01664dc4b0c60afbdf4153437e2}
+      \strng{fullhash}{26d3c01664dc4b0c60afbdf4153437e2}
+      \strng{fullhashraw}{26d3c01664dc4b0c60afbdf4153437e2}
+      \strng{bibnamehash}{26d3c01664dc4b0c60afbdf4153437e2}
+      \strng{authorbibnamehash}{26d3c01664dc4b0c60afbdf4153437e2}
+      \strng{authornamehash}{26d3c01664dc4b0c60afbdf4153437e2}
+      \strng{authorfullhash}{26d3c01664dc4b0c60afbdf4153437e2}
+      \strng{authorfullhashraw}{26d3c01664dc4b0c60afbdf4153437e2}
+      \field{labelalpha}{Hoe63}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of the American Statistical Association}
+      \field{number}{301}
+      \field{title}{"Probability inequalities for sums of bounded random variables"}
+      \field{volume}{58}
+      \field{year}{1963}
+      \field{pages}{13\bibrangedash 30}
+      \range{pages}{18}
+    \endentry
+    \entry{Koller09book}{book}{}{}
+      \name{author}{2}{}{%
+        {{hash=0ffc3f404f0baef79d60dfb5034ff37a}{%
+           family={Koller},
+           familyi={K\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod}}}%
+        {{hash=dd411fb220ac3217e90c536cb4cf7ae0}{%
+           family={Friedman},
+           familyi={F\bibinitperiod},
+           given={N.},
+           giveni={N\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {The MIT Press}%
+      }
+      \strng{namehash}{ea653c3ad05b727b7a1862f2c41e0538}
+      \strng{fullhash}{ea653c3ad05b727b7a1862f2c41e0538}
+      \strng{fullhashraw}{ea653c3ad05b727b7a1862f2c41e0538}
+      \strng{bibnamehash}{ea653c3ad05b727b7a1862f2c41e0538}
+      \strng{authorbibnamehash}{ea653c3ad05b727b7a1862f2c41e0538}
+      \strng{authornamehash}{ea653c3ad05b727b7a1862f2c41e0538}
+      \strng{authorfullhash}{ea653c3ad05b727b7a1862f2c41e0538}
+      \strng{authorfullhashraw}{ea653c3ad05b727b7a1862f2c41e0538}
+      \field{labelalpha}{KF09}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Probabilistic Graphical Models: Principles and Techniques}
+      \field{year}{2009}
+    \endentry
+    \entry{Ogasawara21}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=c98305ce62b853bf1ac24068ea6c80da}{%
+           family={Ogasawara},
+           familyi={O\bibinitperiod},
+           given={Haruhiko},
+           giveni={H\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Taylor & Francis}%
+      }
+      \strng{namehash}{c98305ce62b853bf1ac24068ea6c80da}
+      \strng{fullhash}{c98305ce62b853bf1ac24068ea6c80da}
+      \strng{fullhashraw}{c98305ce62b853bf1ac24068ea6c80da}
+      \strng{bibnamehash}{c98305ce62b853bf1ac24068ea6c80da}
+      \strng{authorbibnamehash}{c98305ce62b853bf1ac24068ea6c80da}
+      \strng{authornamehash}{c98305ce62b853bf1ac24068ea6c80da}
+      \strng{authorfullhash}{c98305ce62b853bf1ac24068ea6c80da}
+      \strng{authorfullhashraw}{c98305ce62b853bf1ac24068ea6c80da}
+      \field{labelalpha}{Oga21}
+      \field{sortinit}{O}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Communications in Statistics - Theory and Methods}
+      \field{number}{1}
+      \field{title}{Improvements of the Markov and Chebyshev inequalities using the partial expectation}
+      \field{volume}{50}
+      \field{year}{2021}
+      \field{pages}{116\bibrangedash 131}
+      \range{pages}{16}
+      \verb{doi}
+      \verb 10.1080/03610926.2019.1630438
+      \endverb
+      \verb{eprint}
+      \verb https://doi.org/10.1080/03610926.2019.1630438
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1080/03610926.2019.1630438
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1080/03610926.2019.1630438
+      \endverb
+    \endentry
+    \entry{Papadimitriou87math}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=fcbb501d1c7f99d55b96c77659c8f7e6}{%
+           family={Papadimitriou},
+           familyi={P\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod}}}%
+        {{hash=fbd8e2c7445f2a0d3352d329a02cf7dd}{%
+           family={Tsitsiklis},
+           familyi={T\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{165b8fc1e75f1bf2e293a31e77e8ff92}
+      \strng{fullhash}{165b8fc1e75f1bf2e293a31e77e8ff92}
+      \strng{fullhashraw}{165b8fc1e75f1bf2e293a31e77e8ff92}
+      \strng{bibnamehash}{165b8fc1e75f1bf2e293a31e77e8ff92}
+      \strng{authorbibnamehash}{165b8fc1e75f1bf2e293a31e77e8ff92}
+      \strng{authornamehash}{165b8fc1e75f1bf2e293a31e77e8ff92}
+      \strng{authorfullhash}{165b8fc1e75f1bf2e293a31e77e8ff92}
+      \strng{authorfullhashraw}{165b8fc1e75f1bf2e293a31e77e8ff92}
+      \field{labelalpha}{PT87}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Mathematics of operations research}
+      \field{number}{3}
+      \field{title}{The complexity of {Markov} decision processes}
+      \field{volume}{12}
+      \field{year}{1987}
+      \field{pages}{441\bibrangedash 450}
+      \range{pages}{10}
+    \endentry
+    \entry{Ramdas23arxiv}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=1397f973e97cb40b67654aac778db5ec}{%
+           family={Ramdas},
+           familyi={R\bibinitperiod},
+           given={Aaditya},
+           giveni={A\bibinitperiod}}}%
+        {{hash=5a72eaf8bd390bca40e6aa973847538b}{%
+           family={Manole},
+           familyi={M\bibinitperiod},
+           given={Tudor},
+           giveni={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{82896520f3f56714df4e6f00bf8b5198}
+      \strng{fullhash}{82896520f3f56714df4e6f00bf8b5198}
+      \strng{fullhashraw}{82896520f3f56714df4e6f00bf8b5198}
+      \strng{bibnamehash}{82896520f3f56714df4e6f00bf8b5198}
+      \strng{authorbibnamehash}{82896520f3f56714df4e6f00bf8b5198}
+      \strng{authornamehash}{82896520f3f56714df4e6f00bf8b5198}
+      \strng{authorfullhash}{82896520f3f56714df4e6f00bf8b5198}
+      \strng{authorfullhashraw}{82896520f3f56714df4e6f00bf8b5198}
+      \field{labelalpha}{RM23}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{math.ST}
+      \field{eprinttype}{arXiv}
+      \field{title}{Randomized and Exchangeable Improvements of Markov's, Chebyshev's and Chernoff's Inequalities}
+      \field{year}{2023}
+      \verb{eprint}
+      \verb 2304.02611
+      \endverb
+    \endentry
+    \entry{Shienman22icra}{inproceedings}{}{}
+      \name{author}{2}{}{%
+        {{hash=933d22d547c25ceb5a2aeabdd8d6cc9a}{%
+           family={Shienman},
+           familyi={S\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=8eb79a90f565c8b87268badbe74ba4d7}{%
+           family={Indelman},
+           familyi={I\bibinitperiod},
+           given={V.},
+           giveni={V\bibinitperiod}}}%
+      }
+      \strng{namehash}{91b4063aacd210a2ffc765aad6e71f3b}
+      \strng{fullhash}{91b4063aacd210a2ffc765aad6e71f3b}
+      \strng{fullhashraw}{91b4063aacd210a2ffc765aad6e71f3b}
+      \strng{bibnamehash}{91b4063aacd210a2ffc765aad6e71f3b}
+      \strng{authorbibnamehash}{91b4063aacd210a2ffc765aad6e71f3b}
+      \strng{authornamehash}{91b4063aacd210a2ffc765aad6e71f3b}
+      \strng{authorfullhash}{91b4063aacd210a2ffc765aad6e71f3b}
+      \strng{authorfullhashraw}{91b4063aacd210a2ffc765aad6e71f3b}
+      \field{labelalpha}{SI22}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extraalpha}{1}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{IEEE Intl. Conf. on Robotics and Automation (ICRA)}
+      \field{title}{D2A-BSP: Distilled Data Association Belief Space Planning with Performance Guarantees Under Budget Constraints}
+      \field{year}{2022}
+    \endentry
+    \entry{Sztyglic22iros}{inproceedings}{}{}
+      \name{author}{2}{}{%
+        {{hash=527fb14342e805c615a117750a41763b}{%
+           family={Sztyglic},
+           familyi={S\bibinitperiod},
+           given={Ori},
+           giveni={O\bibinitperiod}}}%
+        {{hash=af67693dabb60e26b90427a83bbe560b}{%
+           family={Indelman},
+           familyi={I\bibinitperiod},
+           given={Vadim},
+           giveni={V\bibinitperiod}}}%
+      }
+      \strng{namehash}{a6da9342efe80b37b8f2a8a6bd45d2b7}
+      \strng{fullhash}{a6da9342efe80b37b8f2a8a6bd45d2b7}
+      \strng{fullhashraw}{a6da9342efe80b37b8f2a8a6bd45d2b7}
+      \strng{bibnamehash}{a6da9342efe80b37b8f2a8a6bd45d2b7}
+      \strng{authorbibnamehash}{a6da9342efe80b37b8f2a8a6bd45d2b7}
+      \strng{authornamehash}{a6da9342efe80b37b8f2a8a6bd45d2b7}
+      \strng{authorfullhash}{a6da9342efe80b37b8f2a8a6bd45d2b7}
+      \strng{authorfullhashraw}{a6da9342efe80b37b8f2a8a6bd45d2b7}
+      \field{labelalpha}{SI22}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extraalpha}{2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{IEEE/RSJ Intl. Conf. on Intelligent Robots and Systems (IROS)}
+      \field{title}{Speeding up Online POMDP Planning via Simplification}
+      \field{year}{2022}
+    \endentry
+    \entry{Sunberg18icaps}{inproceedings}{}{}
+      \name{author}{2}{}{%
+        {{hash=0982e1d2cee43e4bb2821251bc47ae27}{%
+           family={Sunberg},
+           familyi={S\bibinitperiod},
+           given={Zachary},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=e36ad022497396d3ca41ea1594ac09ec}{%
+           family={Kochenderfer},
+           familyi={K\bibinitperiod},
+           given={Mykel},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{7c8eb9608dac1862e83c654ddc92f81c}
+      \strng{fullhash}{7c8eb9608dac1862e83c654ddc92f81c}
+      \strng{fullhashraw}{7c8eb9608dac1862e83c654ddc92f81c}
+      \strng{bibnamehash}{7c8eb9608dac1862e83c654ddc92f81c}
+      \strng{authorbibnamehash}{7c8eb9608dac1862e83c654ddc92f81c}
+      \strng{authornamehash}{7c8eb9608dac1862e83c654ddc92f81c}
+      \strng{authorfullhash}{7c8eb9608dac1862e83c654ddc92f81c}
+      \strng{authorfullhashraw}{7c8eb9608dac1862e83c654ddc92f81c}
+      \field{labelalpha}{SK18}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the International Conference on Automated Planning and Scheduling}
+      \field{number}{1}
+      \field{title}{Online algorithms for POMDPs with continuous state, action, and observation spaces}
+      \field{volume}{28}
+      \field{year}{2018}
+    \endentry
+    \entry{Shienman24arxiv}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=7224560e66ec0516fb32423d55b80951}{%
+           family={Shienman},
+           familyi={S\bibinitperiod},
+           given={Moshe},
+           giveni={M\bibinitperiod}}}%
+        {{hash=c03d1e0ffbcc6d3902abaddb52fed35c}{%
+           family={Levy-Or},
+           familyi={L\bibinithyphendelim O\bibinitperiod},
+           given={Ohad},
+           giveni={O\bibinitperiod}}}%
+        {{hash=da701266dff9b3f01fdc8e0d18e5f021}{%
+           family={Kaess},
+           familyi={K\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+        {{hash=af67693dabb60e26b90427a83bbe560b}{%
+           family={Indelman},
+           familyi={I\bibinitperiod},
+           given={Vadim},
+           giveni={V\bibinitperiod}}}%
+      }
+      \strng{namehash}{a8626c56e74ce1056809699e333b8297}
+      \strng{fullhash}{a8626c56e74ce1056809699e333b8297}
+      \strng{fullhashraw}{a8626c56e74ce1056809699e333b8297}
+      \strng{bibnamehash}{a8626c56e74ce1056809699e333b8297}
+      \strng{authorbibnamehash}{a8626c56e74ce1056809699e333b8297}
+      \strng{authornamehash}{a8626c56e74ce1056809699e333b8297}
+      \strng{authorfullhash}{a8626c56e74ce1056809699e333b8297}
+      \strng{authorfullhashraw}{a8626c56e74ce1056809699e333b8297}
+      \field{labelalpha}{SLKI24}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{cs.AI}
+      \field{eprinttype}{arXiv}
+      \field{title}{A Slices Perspective for Incremental Nonparametric Inference in High Dimensional State Spaces}
+      \field{year}{2024}
+      \verb{eprint}
+      \verb 2405.16453
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/2405.16453
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/2405.16453
+      \endverb
+    \endentry
+    \entry{Silver10nips}{inproceedings}{}{}
+      \name{author}{2}{}{%
+        {{hash=89dbd30410c2085cd059f32c57d4593e}{%
+           family={Silver},
+           familyi={S\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+        {{hash=1cbd91f7404b2298b46bb46c47c08251}{%
+           family={Veness},
+           familyi={V\bibinitperiod},
+           given={Joel},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{fd3f13f58ce542f01290f15c192be75a}
+      \strng{fullhash}{fd3f13f58ce542f01290f15c192be75a}
+      \strng{fullhashraw}{fd3f13f58ce542f01290f15c192be75a}
+      \strng{bibnamehash}{fd3f13f58ce542f01290f15c192be75a}
+      \strng{authorbibnamehash}{fd3f13f58ce542f01290f15c192be75a}
+      \strng{authornamehash}{fd3f13f58ce542f01290f15c192be75a}
+      \strng{authorfullhash}{fd3f13f58ce542f01290f15c192be75a}
+      \strng{authorfullhashraw}{fd3f13f58ce542f01290f15c192be75a}
+      \field{labelalpha}{SV10}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Advances in Neural Information Processing Systems (NIPS)}
+      \field{title}{Monte-Carlo planning in large POMDPs}
+      \field{year}{2010}
+      \field{pages}{2164\bibrangedash 2172}
+      \range{pages}{9}
+    \endentry
+    \entry{Thomas21arxiv}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=31f82cd1f068b3a41cdbbf73dcb70b3a}{%
+           family={Thomas},
+           familyi={T\bibinitperiod},
+           given={Vincent},
+           giveni={V\bibinitperiod}}}%
+        {{hash=674a0539b24604c060ba37a96aa4a2d3}{%
+           family={Hutin},
+           familyi={H\bibinitperiod},
+           given={Geremy},
+           giveni={G\bibinitperiod}}}%
+        {{hash=72d40a76adebe96166d4cdcbeb844c72}{%
+           family={Buffet},
+           familyi={B\bibinitperiod},
+           given={Olivier},
+           giveni={O\bibinitperiod}}}%
+      }
+      \strng{namehash}{44c4fdca286eaac1102787c9dca7ea29}
+      \strng{fullhash}{44c4fdca286eaac1102787c9dca7ea29}
+      \strng{fullhashraw}{44c4fdca286eaac1102787c9dca7ea29}
+      \strng{bibnamehash}{44c4fdca286eaac1102787c9dca7ea29}
+      \strng{authorbibnamehash}{44c4fdca286eaac1102787c9dca7ea29}
+      \strng{authornamehash}{44c4fdca286eaac1102787c9dca7ea29}
+      \strng{authorfullhash}{44c4fdca286eaac1102787c9dca7ea29}
+      \strng{authorfullhashraw}{44c4fdca286eaac1102787c9dca7ea29}
+      \field{labelalpha}{THB21}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{arXiv preprint arXiv:2103.11345}
+      \field{title}{Monte Carlo Information-Oriented Planning}
+      \field{year}{2021}
+    \endentry
+    \entry{Wang77cmb}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=8440a4fbf93dfd782fe3b6c589d71186}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Chung-Lie},
+           giveni={C\bibinithyphendelim L\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{8440a4fbf93dfd782fe3b6c589d71186}
+      \strng{fullhash}{8440a4fbf93dfd782fe3b6c589d71186}
+      \strng{fullhashraw}{8440a4fbf93dfd782fe3b6c589d71186}
+      \strng{bibnamehash}{8440a4fbf93dfd782fe3b6c589d71186}
+      \strng{authorbibnamehash}{8440a4fbf93dfd782fe3b6c589d71186}
+      \strng{authornamehash}{8440a4fbf93dfd782fe3b6c589d71186}
+      \strng{authorfullhash}{8440a4fbf93dfd782fe3b6c589d71186}
+      \strng{authorfullhashraw}{8440a4fbf93dfd782fe3b6c589d71186}
+      \field{labelalpha}{Wan77}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Canadian Mathematical Bulletin}
+      \field{number}{3}
+      \field{title}{Variants of the Hölder Inequality and its Inverses}
+      \field{volume}{20}
+      \field{year}{1977}
+      \field{pages}{377\bibrangedash 384}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.4153/CMB-1977-056-5
+      \endverb
+    \endentry
+    \entry{Yotam24tro}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=f700645a526a23b79aa650b8da4a9548}{%
+           family={Yotam},
+           familyi={Y\bibinitperiod},
+           given={Tom},
+           giveni={T\bibinitperiod}}}%
+        {{hash=af67693dabb60e26b90427a83bbe560b}{%
+           family={Indelman},
+           familyi={I\bibinitperiod},
+           given={Vadim},
+           giveni={V\bibinitperiod}}}%
+      }
+      \strng{namehash}{8279f41223dc469716dd4c451da4708a}
+      \strng{fullhash}{8279f41223dc469716dd4c451da4708a}
+      \strng{fullhashraw}{8279f41223dc469716dd4c451da4708a}
+      \strng{bibnamehash}{8279f41223dc469716dd4c451da4708a}
+      \strng{authorbibnamehash}{8279f41223dc469716dd4c451da4708a}
+      \strng{authornamehash}{8279f41223dc469716dd4c451da4708a}
+      \strng{authorfullhash}{8279f41223dc469716dd4c451da4708a}
+      \strng{authorfullhashraw}{8279f41223dc469716dd4c451da4708a}
+      \field{labelalpha}{YI24}
+      \field{sortinit}{Y}
+      \field{sortinithash}{fd67ad5a9ef0f7456bdd9aab10fe1495}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{{IEEE} Trans. Robotics}
+      \field{note}{Accepted.}
+      \field{title}{Measurement Simplification in$\backslash$rho-POMDP with Performance Guarantees}
+      \field{year}{2024}
+    \endentry
+    \entry{Ye17jair}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=7d32cc3b0022ffa338458bada6fcd4ac}{%
+           family={Ye},
+           familyi={Y\bibinitperiod},
+           given={Nan},
+           giveni={N\bibinitperiod}}}%
+        {{hash=d057e0c001d744cefa1b6afbcc0ca78d}{%
+           family={Somani},
+           familyi={S\bibinitperiod},
+           given={Adhiraj},
+           giveni={A\bibinitperiod}}}%
+        {{hash=335adf1f352b65a9575abf76521fb446}{%
+           family={Hsu},
+           familyi={H\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+        {{hash=94d0309c8aab7c058e550b60c05572de}{%
+           family={Lee},
+           familyi={L\bibinitperiod},
+           given={Wee\bibnamedelima Sun},
+           giveni={W\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \strng{namehash}{97b553e31b06fc6038e81e010cf3d459}
+      \strng{fullhash}{97b553e31b06fc6038e81e010cf3d459}
+      \strng{fullhashraw}{97b553e31b06fc6038e81e010cf3d459}
+      \strng{bibnamehash}{97b553e31b06fc6038e81e010cf3d459}
+      \strng{authorbibnamehash}{97b553e31b06fc6038e81e010cf3d459}
+      \strng{authornamehash}{97b553e31b06fc6038e81e010cf3d459}
+      \strng{authorfullhash}{97b553e31b06fc6038e81e010cf3d459}
+      \strng{authorfullhashraw}{97b553e31b06fc6038e81e010cf3d459}
+      \field{labelalpha}{YSHL17}
+      \field{sortinit}{Y}
+      \field{sortinithash}{fd67ad5a9ef0f7456bdd9aab10fe1495}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{JAIR}
+      \field{title}{DESPOT: Online POMDP planning with regularization}
+      \field{volume}{58}
+      \field{year}{2017}
+      \field{pages}{231\bibrangedash 266}
+      \range{pages}{36}
+    \endentry
+  \enddatalist
+\endrefsection
+
+\refsection{1}
+  \datalist[entry]{none/global//global/global/global}
+    \entry{LevyOrIACAS24}{inproceedings}{}{}
+      \name{author}{2}{}{%
+        {{hash=c03d1e0ffbcc6d3902abaddb52fed35c}{%
+           family={Levy-Or},
+           familyi={L\bibinithyphendelim O\bibinitperiod},
+           given={Ohad},
+           giveni={O\bibinitperiod}}}%
+        {{hash=af67693dabb60e26b90427a83bbe560b}{%
+           family={Indelman},
+           familyi={I\bibinitperiod},
+           given={Vadim},
+           giveni={V\bibinitperiod}}}%
+      }
+      \strng{namehash}{c8609281d1827ecacdd60d723dc2b47a}
+      \strng{fullhash}{c8609281d1827ecacdd60d723dc2b47a}
+      \strng{fullhashraw}{c8609281d1827ecacdd60d723dc2b47a}
+      \strng{bibnamehash}{c8609281d1827ecacdd60d723dc2b47a}
+      \strng{authorbibnamehash}{c8609281d1827ecacdd60d723dc2b47a}
+      \strng{authornamehash}{c8609281d1827ecacdd60d723dc2b47a}
+      \strng{authorfullhash}{c8609281d1827ecacdd60d723dc2b47a}
+      \strng{authorfullhashraw}{c8609281d1827ecacdd60d723dc2b47a}
+      \field{extraname}{1}
+      \field{labelalpha}{LI24}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{extraalpha}{1}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Israel Annual Converence On Aerospace Sciences (IACAS)}
+      \field{title}{Novel Class of Expected Value Bounds and Applications in Belief Space Planning}
+      \field{year}{2024}
+      \true{nocite}
+      \keyw{pubinfo}
+    \endentry
+    \entry{LevyOrTRO24}{inproceedings}{}{}
+      \name{author}{2}{}{%
+        {{hash=c03d1e0ffbcc6d3902abaddb52fed35c}{%
+           family={Levy-Or},
+           familyi={L\bibinithyphendelim O\bibinitperiod},
+           given={Ohad},
+           giveni={O\bibinitperiod}}}%
+        {{hash=af67693dabb60e26b90427a83bbe560b}{%
+           family={Indelman},
+           familyi={I\bibinitperiod},
+           given={Vadim},
+           giveni={V\bibinitperiod}}}%
+      }
+      \strng{namehash}{c8609281d1827ecacdd60d723dc2b47a}
+      \strng{fullhash}{c8609281d1827ecacdd60d723dc2b47a}
+      \strng{fullhashraw}{c8609281d1827ecacdd60d723dc2b47a}
+      \strng{bibnamehash}{c8609281d1827ecacdd60d723dc2b47a}
+      \strng{authorbibnamehash}{c8609281d1827ecacdd60d723dc2b47a}
+      \strng{authornamehash}{c8609281d1827ecacdd60d723dc2b47a}
+      \strng{authorfullhash}{c8609281d1827ecacdd60d723dc2b47a}
+      \strng{authorfullhashraw}{c8609281d1827ecacdd60d723dc2b47a}
+      \field{extraname}{2}
+      \field{labelalpha}{LI24}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{extraalpha}{2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{{IEEE} Trans. Robotics}
+      \field{note}{To be submitted}
+      \field{title}{Novel Class of Expected Value Bounds and Applications in Belief Space Planning}
+      \field{year}{2024}
+      \true{nocite}
+      \keyw{pubinfo}
+    \endentry
+  \enddatalist
+  \datalist[entry]{anyt/global//global/global/global}
+    \entry{LevyOrIACAS24}{inproceedings}{}{}
+      \name{author}{2}{}{%
+        {{hash=c03d1e0ffbcc6d3902abaddb52fed35c}{%
+           family={Levy-Or},
+           familyi={L\bibinithyphendelim O\bibinitperiod},
+           given={Ohad},
+           giveni={O\bibinitperiod}}}%
+        {{hash=af67693dabb60e26b90427a83bbe560b}{%
+           family={Indelman},
+           familyi={I\bibinitperiod},
+           given={Vadim},
+           giveni={V\bibinitperiod}}}%
+      }
+      \strng{namehash}{c8609281d1827ecacdd60d723dc2b47a}
+      \strng{fullhash}{c8609281d1827ecacdd60d723dc2b47a}
+      \strng{fullhashraw}{c8609281d1827ecacdd60d723dc2b47a}
+      \strng{bibnamehash}{c8609281d1827ecacdd60d723dc2b47a}
+      \strng{authorbibnamehash}{c8609281d1827ecacdd60d723dc2b47a}
+      \strng{authornamehash}{c8609281d1827ecacdd60d723dc2b47a}
+      \strng{authorfullhash}{c8609281d1827ecacdd60d723dc2b47a}
+      \strng{authorfullhashraw}{c8609281d1827ecacdd60d723dc2b47a}
+      \field{extraname}{1}
+      \field{labelalpha}{LI24}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extraalpha}{1}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Israel Annual Converence On Aerospace Sciences (IACAS)}
+      \field{title}{Novel Class of Expected Value Bounds and Applications in Belief Space Planning}
+      \field{year}{2024}
+      \true{nocite}
+      \keyw{pubinfo}
+    \endentry
+    \entry{LevyOrTRO24}{inproceedings}{}{}
+      \name{author}{2}{}{%
+        {{hash=c03d1e0ffbcc6d3902abaddb52fed35c}{%
+           family={Levy-Or},
+           familyi={L\bibinithyphendelim O\bibinitperiod},
+           given={Ohad},
+           giveni={O\bibinitperiod}}}%
+        {{hash=af67693dabb60e26b90427a83bbe560b}{%
+           family={Indelman},
+           familyi={I\bibinitperiod},
+           given={Vadim},
+           giveni={V\bibinitperiod}}}%
+      }
+      \strng{namehash}{c8609281d1827ecacdd60d723dc2b47a}
+      \strng{fullhash}{c8609281d1827ecacdd60d723dc2b47a}
+      \strng{fullhashraw}{c8609281d1827ecacdd60d723dc2b47a}
+      \strng{bibnamehash}{c8609281d1827ecacdd60d723dc2b47a}
+      \strng{authorbibnamehash}{c8609281d1827ecacdd60d723dc2b47a}
+      \strng{authornamehash}{c8609281d1827ecacdd60d723dc2b47a}
+      \strng{authorfullhash}{c8609281d1827ecacdd60d723dc2b47a}
+      \strng{authorfullhashraw}{c8609281d1827ecacdd60d723dc2b47a}
+      \field{extraname}{2}
+      \field{labelalpha}{LI24}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extraalpha}{2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{{IEEE} Trans. Robotics}
+      \field{note}{To be submitted}
+      \field{title}{Novel Class of Expected Value Bounds and Applications in Belief Space Planning}
+      \field{year}{2024}
+      \true{nocite}
+      \keyw{pubinfo}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
